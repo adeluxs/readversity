@@ -1,0 +1,77 @@
+{{ header }}
+<div class="container">
+    <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+            <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+    </ul>
+    <div class="row">{{ column_left }}
+        {% if column_left and column_right %}
+            {% set class = 'col-sm-6' %}
+        {% elseif column_left or column_right %}
+            {% set class = 'col-sm-9' %}
+        {% else %}
+            {% set class = 'col-sm-12' %}
+        {% endif %}
+        <div id="content" class="{{ class }}">{{ content_top }}
+            {#<h2>Kindly follow the process below to accesss your purchased eBook.{{ heading_title }}</h2>#}
+            <h2><b>Kindly follow the <span style="color:#006f91">3-step</span> process below to access your purchased eBook:</b></h2>
+            {% if downloads %}
+                <p><h3><b>{{ text_welcome }}</b></h3></p>
+
+                <p>{{ text_authorised }}</p>
+
+                <p>{{ text_select_os }}</p>
+
+                {#<p><h3><b><img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/48/number-1-icon.png" alt="HTML tutorial" style="width:42px;height:42px;"> {{ text_os }}</b></h3></p>#}
+                <p><h3><b><img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/48/number-1-icon.png" alt="HTML tutorial" style="width:42px;height:42px;"> Download and Install Viewer for {{ text_os }}</b></h3></p>
+
+                <ul>
+                    {#<li>{{ text_os_win }}</li>#}
+                    {#<li>{{ text_os_mac }}</li>#}
+                    {#<li>{{ text_os_ios }}</li>#}
+                    {#<li>{{ text_os_android }}</li>#}
+                    
+                    <li class='locklizard'><b>For Windows PC: </b><a href="https://lockbook.org/lockbookreaderapp.exe" target="_blank" rel="noopener noreferrer">Windows LockBook SafeGuard Viewer</a></li>
+                    <li class='locklizard'><b>For Android: </b><a href="https://play.google.com/store/apps/details?id=org.lockbook.reader" target="_blank" rel="noopener noreferrer">Android LockBook Reader App</a></li>
+                    <li class='locklizard'><b>For Mac OS: </b><a href="https://lockbook.org/PDCViewerSetupOSX.zip" target="_blank" rel="noopener noreferrer">Mac SafeGuard Viewer</a></li>
+                    <li class='locklizard'><b>For iOS: </b>Not Available- Coming soon!!!</li>
+                </ul>
+
+                <p><h3><b><img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/48/number-2-icon.png" alt="HTML tutorial" style="width:42px;height:42px;"> Open the app, navigate to 'MY LIBRARY' and sign in</b></h3></p>
+
+                <p><b>Please sign in with the credentials used in purchasing the book from this eCommerce site.</br> You would only be allowed to open the book on one device. Please contact the support team to request access to an extra device.</b></p>
+
+                {#<p>#}
+                {#    {% if text_license_download %}#}
+                {#        <span style="width: 115px; height: 25px; background: black; padding: 10px; text-align: center; border-radius: 5px; color: white; font-weight: bold; line-height: 25px;" class='locklizard'>{{ text_license_download }}</span>#}
+                {#    {% elseif text_no_license %}#}
+                {#        {{ text_no_license }}#}
+                {#    {% else %}#}
+                {#        {{ text_license_error }}#}
+                {#    {% endif %}#}
+                {#</p>#}
+
+                {#<p><h3><b><img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/48/number-3-icon.png" alt="HTML tutorial" style="width:42px;height:42px;"> Download and Open Your Protected eBook{{ text_protected_files }}</b></h3></p>#}
+                <p><h3><b><img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/48/number-3-icon.png" alt="HTML tutorial" style="width:42px;height:42px;">Click your book to download it.</b></h3></p>
+                <p><b>You would see your book in the Recently Opened section, Click it to open and read it.</b></p>
+                
+                {#<p>Document licenses and controls are set by LockBook. You must contact support@lockbook.org if you have any questions about them.{{ text_license_controls }}</p>#}
+                <p>Document licenses and controls are set by LockBook. You must contact support@lockbook.org if you have any questions about them.</p>
+                <br/>
+
+                <p><h3><b><img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/48/new-icon.png" alt="HTML tutorial" style="width:42px;height:42px;">{{ text_any_problems }}</b></h3></p>
+
+                <p>Difficulty activating your Book or ordered Item? - reach us via the customer agent button at the bottom right corner of your screen.</p>
+                <p>If our online agents are not able to solve your problem, please contact us via our email <b><a href="mailto:support@lockbook.org">support@lockbook.org</a></b>.</p>
+
+            {% else %}
+                <p>{{ text_empty }}</p>
+            {% endif %}
+            <div class="buttons clearfix">
+                <div class="pull-right"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
+            </div>
+            {{ content_bottom }}</div>
+        {{ column_right }}</div>
+</div>
+{{ footer }}
