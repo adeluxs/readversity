@@ -1,0 +1,8 @@
+User:brian.efa@gmail.com with Password:Welc0me$2 signed in, but the macaddress: 538e821e5a3e5c02 and OS: Android failed to save at date: 2024.07.31 05:51:57
+User:sandraakinkunmi@gmail.com with Password:Asandra2 signed in, but the macaddress: 59af895a09c8e8de and OS: Android failed to save at date: 2024.07.31 02:45:04
+User:taiwoidowu1993@yahoo.com with Password:Jolaoluwa@1234 signed in, but the macaddress: 0a:00:27:00:00:10 and OS: win32 failed to save at date: 2024.07.31 02:52:48
+User:taiwoidowu1993@yahoo.com with Password:Jolaoluwa@1234 signed in, but the macaddress: 0a:00:27:00:00:10 and OS: win32 failed to save at date: 2024.07.31 02:53:02
+User:sandraakinkunmi@gmail.com with Password:Asandra2 signed in, but the macaddress: 59af895a09c8e8de and OS: Android failed to save at date: 2024.07.31 03:01:23
+User:sandraakinkunmi@gmail.com with Password:Asandra2 signed in, but the macaddress: 59af895a09c8e8de and OS: Android failed to save at date: 2024.07.31 03:01:59
+User:owoichojames100@gmail.com with Password:Agada1234 signed in, but the macaddress: 6bd66486b9813e46 and OS: Android failed to save at date: 2024.07.31 08:31:21
+User:owoichojames100@gmail.com with Password:Agada1234 signed in, but the macaddress: 6bd66486b9813e46 and OS: Android failed to save at date: 2024.07.31 08:37:34

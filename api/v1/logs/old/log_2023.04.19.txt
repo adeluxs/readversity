@@ -1,0 +1,2 @@
+User:mallumlezra@gmail.com with Password:Laban@123 signed in, but the macaddress: f496f9beaae77e77 and OS: Android failed to save at date: 2023.04.19 11:49:06
+User:laseosiyemi@gmail.com with Password:diamond11 signed in, but the macaddress: 24:77:03:61:45:a4 and OS: win32 failed to save at date: 2023.04.19 09:30:43

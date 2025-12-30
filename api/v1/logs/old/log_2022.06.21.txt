@@ -1,0 +1,10 @@
+User:okunlolaini@gmail.com with Password:dare2004 signed in, but the macaddress: 5017886b-9cb8-403f-bf3b-03df6e8c3b1c and OS: Android failed to save at date: 2022.06.21 01:57:15
+User:ITAMUNOALA6789@student.babcock.edu.ng with Password:iwasborn2003 signed in, but the macaddress: 2bf7fd47-bf2d-4eab-8666-83356c9fb7ba and OS: Android failed to save at date: 2022.06.21 08:15:03
+User:asekun-olarinmoyei@babcock.edu.ng with Password:Oyebola.007 signed in, but the macaddress: 13a04b73-a668-4bf5-a31f-dfe8bb082538 and OS: Android failed to save at date: 2022.06.21 09:47:38
+User:timiawosemo@gmail.com with Password:Timilehin04 signed in, but the macaddress: a4:c4:94:b4:2e:72 and OS: win32 failed to save at date: 2022.06.21 10:39:58
+User:oluwashivi0219@gmail.com with Password:SHivi0219 signed in, but the macaddress: 4bc82d66-2301-494b-9da1-9302d6f56b2b and OS: Android failed to save at date: 2022.06.21 12:36:15
+User:belemaomolaj@gmail.com with Password:TAMUNOBELEMA signed in, but the macaddress: 03860b48-ca6f-4fa1-8665-42a010a3ee1e and OS: Android failed to save at date: 2022.06.21 03:02:10
+User:oladejotimi1@gmail.com with Password:officialrt01 signed in, but the macaddress: 4c891254-84b3-4ed7-a556-9029d7f1c8d9 and OS: Android failed to save at date: 2022.06.21 06:43:00
+User:darejoshua244@gmail.com with Password:dareyjoshua2005 signed in, but the macaddress: db9cd2ac-cc49-4b35-8b2c-40f17baf5cbc and OS: Android failed to save at date: 2022.06.21 07:20:40
+User:oreoluwaokubadejo@gmail.com with Password:0yekoya26. signed in, but the macaddress: ec:2e:98:57:39:27 and OS: win32 failed to save at date: 2022.06.21 08:49:02
+User:ogbodo5548@student.babcock.edu.ng with Password:chinigerial123 signed in, but the macaddress: f3625a7e-b25b-4415-8392-9ff004b2d94e and OS: Android failed to save at date: 2022.06.21 08:49:55

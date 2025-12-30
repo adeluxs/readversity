@@ -1,0 +1,2 @@
+User:kamsiyochinwakwuribe@gmail.com with Password:lockbook@2023 signed in, but the macaddress: 28:16:ad:03:ff:d9 and OS: win32 failed to save at date: 2023.10.22 01:38:48
+User:oluwafireladeorimolade@gmail.com with Password:oluwafirelade signed in, but the macaddress: 8f0766afa7352557 and OS: Android failed to save at date: 2023.10.22 06:47:02

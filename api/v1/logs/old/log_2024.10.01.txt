@@ -1,0 +1,7 @@
+User:victorudenna@gmail.com with Password:accvictor77 signed in, but the macaddress: 42e7f89e172890bc and OS: Android failed to save at date: 2024.10.01 05:45:19
+User:samuelobongifreke@gmail.com with Password:lockbook signed in, but the macaddress: 233deb12b2b44158 and OS: Android failed to save at date: 2024.10.01 06:21:40
+User:oluwaseyioso051@gmail.com with Password:Akoriola2302 signed in, but the macaddress: 70:bc:10:5f:8a:93 and OS: win32 failed to save at date: 2024.10.01 06:45:16
+User:samuelobongifreke@gmail.com with Password:lockbook signed in, but the macaddress: 233deb12b2b44158 and OS: Android failed to save at date: 2024.10.01 07:53:07
+User:samuelobongifreke@gmail.com with Password:lockbook signed in, but the macaddress: 233deb12b2b44158 and OS: Android failed to save at date: 2024.10.01 08:37:56
+User:ajuwon0008@pg.babcock.edu.ng with Password:Ibiwumi1993 signed in, but the macaddress: 08:d2:3e:b4:98:8a and OS: win32 failed to save at date: 2024.10.01 11:58:58
+User:taiwor881@gmail.com with Password:Becca@28 signed in, but the macaddress: b88d390671e8b2c3 and OS: Android failed to save at date: 2024.10.01 03:28:05

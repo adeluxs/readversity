@@ -1,0 +1,4 @@
+User:oluwanifemiolatunji92@gmail.com with Password:oluwanifemi signed in, but the macaddress: 34:e1:2d:18:70:72 and OS: win32 failed to save at date: 2022.06.19 12:35:08
+User:eniolaatekoja@gmail.com with Password:ateniola456 signed in, but the macaddress: dc:f5:05:56:ab:21 and OS: win32 failed to save at date: 2022.06.19 07:35:49
+User:peaceore81@gmail.com with Password:h5jxMG3x47fwwK8 signed in, but the macaddress: c9ce4fe6-6f8d-464b-808c-075ab5d96c92 and OS: Android failed to save at date: 2022.06.19 07:51:06
+User:mishme06@gmail.com with Password:John14:6 signed in, but the macaddress: d4729acd-6bbe-4529-879c-36b2bc48b3bf and OS: Android failed to save at date: 2022.06.19 08:23:18

@@ -1,0 +1,5 @@
+User:makindeife17@gmail.com with Password:9GMDABzuBvR7YFN signed in, but the macaddress: ba091374-f80e-4f6d-962e-62adae9326d3 and OS: Android failed to save at date: 2022.06.20 06:46:01
+User:darasimianuoluwapo82@gmail.com with Password:2004dara signed in, but the macaddress: a9a16b68-cdc8-42d3-a4c7-a5007e11b5ef and OS: Android failed to save at date: 2022.06.20 08:07:16
+User:oyerindeenoch@gmail.com with Password:Enochdare1. signed in, but the macaddress: 4c:32:75:8f:8e:09 and OS: darwin failed to save at date: 2022.06.20 10:32:24
+User:courtomi01@gmail.com with Password:courtneyz. signed in, but the macaddress: d7cc3df8-e448-4c11-81e6-933c4a212ad0 and OS: Android failed to save at date: 2022.06.20 04:48:11
+User:joshua4817@student.babcock.edu.ng with Password:standard,123 signed in, but the macaddress: 35b69527-c447-48df-97b4-2b7e36b15aee and OS: Android failed to save at date: 2022.06.20 11:29:05

@@ -1,0 +1,19 @@
+User:gbemisola945@gmail.com with Password:1234567890 signed in, but the macaddress: bd033348747f97fb and OS: Android failed to save at date: 2024.06.06 07:23:47
+User:biosesonia2020@gmail.com with Password:Wrapper11 signed in, but the macaddress: 3ff2d9b4-4a8c-4495-affa-62b801f2f38c and OS: Android failed to save at date: 2024.06.06 08:42:13
+User:oluwatimilehinkazeem@gmail.com with Password:Timilehin001 signed in, but the macaddress: fd3cf8c8-cbc1-42be-a5c9-0511c20d6c02 and OS: Android failed to save at date: 2024.06.06 09:12:55
+User:maroathora@gmail.com with Password:02230525 signed in, but the macaddress: 1eeef17b2f2174b9 and OS: Android failed to save at date: 2024.06.06 09:14:39
+User:enwucholaj9054@student.babcock.edu.ng with Password:Nigeria 123 signed in, but the macaddress: 72b06f4a-cb7a-44d6-aba5-b7a0a5a266a5 and OS: Android failed to save at date: 2024.06.06 09:18:04
+User:maroathora@gmail.com with Password:02230525 signed in, but the macaddress: 1eeef17b2f2174b9 and OS: Android failed to save at date: 2024.06.06 09:21:13
+User:nzewiv8461@student.babcock.edu.ng with Password:VANZY@2012 signed in, but the macaddress: 4e0abc67-e203-4018-a417-be597a8312de and OS: Android failed to save at date: 2024.06.06 09:24:19
+User:estheromole08@gmail.com with Password:Oreoluwa123 signed in, but the macaddress: b0:60:88:9b:00:00 and OS: win32 failed to save at date: 2024.06.06 09:30:55
+User:estheromole08@gmail.com with Password:Oreoluwa123 signed in, but the macaddress: b0:60:88:9b:00:00 and OS: win32 failed to save at date: 2024.06.06 09:30:56
+User:estheromole08@gmail.com with Password:Oreoluwa123 signed in, but the macaddress: b0:60:88:9b:00:00 and OS: win32 failed to save at date: 2024.06.06 09:31:51
+User:estheromole08@gmail.com with Password:Oreoluwa123 signed in, but the macaddress: b0:60:88:9b:00:00 and OS: win32 failed to save at date: 2024.06.06 09:32:48
+User:estheromole08@gmail.com with Password:Oreoluwa123 signed in, but the macaddress: b0:60:88:9b:00:00 and OS: win32 failed to save at date: 2024.06.06 09:33:10
+User:estheromole08@gmail.com with Password:Oreoluwa123 signed in, but the macaddress: b0:60:88:9b:00:00 and OS: win32 failed to save at date: 2024.06.06 09:35:11
+User:sholajae7520@student.babcock.edu.ng with Password:Emily789 signed in, but the macaddress: e70a7c9df9df3235 and OS: Android failed to save at date: 2024.06.06 09:36:00
+User:bumolaya@gmail.com with Password:Qb49.YkcZ3a53Wv signed in, but the macaddress: de8ef82d766e0b75 and OS: Android failed to save at date: 2024.06.06 09:41:59
+User:bamsondavid1@gmail.com with Password:Xennonny#1 signed in, but the macaddress: b0:35:9f:b4:49:d4 and OS: win32 failed to save at date: 2024.06.06 10:14:30
+User:bamsondavid1@gmail.com with Password:Xennonny#1 signed in, but the macaddress: b0:35:9f:b4:49:d4 and OS: win32 failed to save at date: 2024.06.06 10:14:39
+User:demiladeayenogun58@gmail.com with Password:bolu13$$ signed in, but the macaddress: cbb5d4d3-81ac-48d1-b484-a316827ce357 and OS: Android failed to save at date: 2024.06.06 10:28:11
+User:banjoo6445@student.babcock.edu.ng with Password:Damilola29 signed in, but the macaddress: 9c:fc:e8:31:e1:a6 and OS: win32 failed to save at date: 2024.06.06 11:21:37

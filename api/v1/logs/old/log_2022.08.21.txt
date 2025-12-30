@@ -1,0 +1,5 @@
+User:afilakapraise70@gmail.com with Password:Newpassword signed in, but the macaddress: dc:e9:94:33:06:15 and OS: win32 failed to save at date: 2022.08.21 10:49:56
+User:einiobong220@gmail.com with Password:Newpassword signed in, but the macaddress: 2578ac1b-6bf3-4078-af1b-271735ef0188 and OS: Android failed to save at date: 2022.08.21 02:56:47
+User:iwunducn4life@gmail.com with Password:pass4GEDS/ebk signed in, but the macaddress: 05459a4c-d062-4cb2-a7c7-a364b05279d2 and OS: Android failed to save at date: 2022.08.21 03:09:13
+User:ayomidefagbile@gmail.com with Password:ayomide2006 signed in, but the macaddress: ae077269-a93e-4a98-9ba3-fa969a1b257e and OS: Android failed to save at date: 2022.08.21 07:02:13
+User:ayomidesamuel1110@gmail.com with Password:1st class student signed in, but the macaddress: 6b7cbc9d-7ee0-48b9-b8c9-8b7546c04572 and OS: Android failed to save at date: 2022.08.21 08:13:12

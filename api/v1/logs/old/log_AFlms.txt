@@ -1,0 +1,9 @@
+User:oyerindeenoch@gmail.com with Password:13d418747677df161d890cef5eb053b7299aa095 with First and Lastname of Enoch and Oyerinde tried registering FAILLED at date: 2022.08.03 04:56:41
+User:oyerindeenoch@gmail.com with Password:13d418747677df161d890cef5eb053b7299aa095 with First and Lastname of Enoch and Oyerinde tried registering FAILLED at date: 2022.08.03 05:05:07
+User:oyerindeenoch@gmail.com with Password:13d418747677df161d890cef5eb053b7299aa095 with First and Lastname of Enoch and Oyerinde tried registering FAILLED at date: 2022.08.03 05:08:57
+User:oyerindeenoch@gmail.com with Password:13d418747677df161d890cef5eb053b7299aa095 with First and Lastname of Enoch and Oyerinde tried registering FAILLED at date: 2022.08.03 06:04:48
+User:oyerindeenoch@gmail.com with Password:13d418747677df161d890cef5eb053b7299aa095 with First and Lastname of Enoch and Oyerinde tried registering FAILLED at date: 2022.08.03 06:07:59
+
+
+
+User:oyerindeenoch@gmail.com with Password:13d418747677df161d890cef5eb053b7299aa095 with First and Lastname of Enoch and Oyerinde tried registering FAILLED at date: 2022.08.03 06:16:57. Error: INSERT INTO `savsoft_users` (password, email, first_name, last_name, contact_no, connection_key, gid, su, subscription_expired, inserted_by, verify_code, wp_user, registered_date, photo, user_status, web_token, android_token, skype_id, time_zone) VALUES ('81dc9bdb52d04dc20036dbd8313ed055', 'oyerindeenoch@gmail.com', 'Enoch', 'Oyerinde', '+2348074141143', NULL, '10', '2', '1974306600', '0', '0', NULL, '2022-08-03 06:16:57', NULL, 'Active', NULL, NULL, NULL, 'Asia/Kolkata')<br>Duplicate entry 'oyerindeenoch@gmail.com' for key 'email'

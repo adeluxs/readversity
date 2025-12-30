@@ -1,0 +1,3 @@
+User:ohakimp4882@student.babcock.edu.ng with Password:Godblessme signed in, but the macaddress: caff0708935e9def and OS: Android failed to save at date: 2022.12.01 11:06:09
+User:ajiboyeb4390@student.babcock.edu.ng with Password:Tamilore1 signed in, but the macaddress: 5e0fb60580049da2 and OS: Android failed to save at date: 2022.12.01 06:00:49
+User:fiyiks05@gmail.com with Password:amariah17 signed in, but the macaddress: 90:0f:0c:ca:4b:df and OS: win32 failed to save at date: 2022.12.01 08:08:34

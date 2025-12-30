@@ -1,0 +1,6 @@
+User:nimidio20@gmail.com with Password:tamaraebi signed in, but the macaddress: ac:d1:b8:0f:3d:fb and OS: win32 failed to save at date: 2022.07.04 01:58:06
+User:izzyskills@gmail.com with Password:healthprinciples signed in, but the macaddress: d0:ab:d5:eb:a7:a3 and OS: win32 failed to save at date: 2022.07.04 05:43:45
+User:bieni2005eseka@gmail.com with Password:patico2005 signed in, but the macaddress: cb64656c-d445-4e73-ba92-e8dc57774d45 and OS: Android failed to save at date: 2022.07.04 07:51:03
+User:Anyanwu1424@student.babcock.edu.ng with Password:Treasure15, signed in, but the macaddress: 55a8fd43-80f6-4726-acf8-9dd1cb3b2910 and OS: Android failed to save at date: 2022.07.04 10:31:29
+User:ugbogulu0419@student.babcock.edu.ng with Password:3002adina@ signed in, but the macaddress: fc:01:7c:8f:03:63 and OS: win32 failed to save at date: 2022.07.04 12:47:19
+User:talabi3537@student.babcock.edu.ng with Password:Newpassword signed in, but the macaddress: 5ffe56fe-edfc-42c5-8c8a-6e5d51bbd662 and OS: Android failed to save at date: 2022.07.04 01:26:28

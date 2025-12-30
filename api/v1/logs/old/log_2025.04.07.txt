@@ -1,0 +1,3 @@
+User:oduyoyeom@gmail.com with Password:bola1993 signed in with 1, but the macaddress: 90:e8:68:d8:da:77 and OS: win32 failed to save at date: 2025.04.07 11:33:51
+User:oduyoyeom@gmail.com with Password:bola1993 signed in with 1, but the macaddress: 90:e8:68:d8:da:77 and OS: win32 failed to save at date: 2025.04.07 11:34:16
+User:mmakwedavid@gmail.com with Password:AloneBoy141 signed in with 1, but the macaddress: 6d9055b1aafb0359 and OS: Android failed to save at date: 2025.04.07 06:18:12

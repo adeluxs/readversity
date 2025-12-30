@@ -1,0 +1,14 @@
+User:david0174@pg.babcock.edu.ng with Password:Samdave1234* signed in, but the macaddress: 655a8a074c922187 and OS: Android failed to save at date: 2024.08.05 08:24:23
+User:oluwatomisinv.ayoade@gmail.com with Password:07033275003 signed in, but the macaddress: 90f8ece2296ebe39 and OS: Android failed to save at date: 2024.08.05 08:32:31
+User:fatadefisayo@gmail.com with Password:ffa101971 signed in, but the macaddress: d40706c407a6049e and OS: Android failed to save at date: 2024.08.05 08:40:15
+User:governor4all@yahoo.com with Password:GJUhusr31$ signed in, but the macaddress: 8dd37c661439c529 and OS: Android failed to save at date: 2024.08.05 09:02:13
+User:kunlejacobaransiola@gmail.com with Password:samuelkay26 signed in, but the macaddress: 147da6bce210419e and OS: Android failed to save at date: 2024.08.05 09:41:11
+User:stbarth006@yahoo.com with Password:Lockbook@1984 signed in, but the macaddress: 586df8870c705504 and OS: Android failed to save at date: 2024.08.05 10:28:36
+User:akanbiestherg@gmail.com with Password:Etisalat2022 signed in, but the macaddress: 5e9411ca00149633 and OS: Android failed to save at date: 2024.08.05 12:46:50
+User:akanbiestherg@gmail.com with Password:Etisalat2022 signed in, but the macaddress: 5e9411ca00149633 and OS: Android failed to save at date: 2024.08.05 12:58:01
+User:akanbiestherg@gmail.com with Password:Etisalat2022 signed in, but the macaddress: 6c:2b:59:2e:cd:53 and OS: win32 failed to save at date: 2024.08.05 01:11:59
+User:governor4all@yahoo.com with Password:GJUhusr31$ signed in, but the macaddress: 8dd37c661439c529 and OS: Android failed to save at date: 2024.08.05 01:30:40
+User:stbarth006@yahoo.com with Password:Lockbook@1984 signed in, but the macaddress: 586df8870c705504 and OS: Android failed to save at date: 2024.08.05 02:15:04
+User:ayoolaadeosun@yahoo.com with Password:A1jan1yan signed in, but the macaddress: 810d135f390f72a1 and OS: Android failed to save at date: 2024.08.05 05:54:25
+User:owoichojames100@gmail.com with Password:Agada1234 signed in, but the macaddress: 6bd66486b9813e46 and OS: Android failed to save at date: 2024.08.05 07:26:32
+User:modupe.oluwa247@gmail.com with Password:covenant247+247 signed in, but the macaddress: 6264d8a7-0825-4826-b5ff-70c8e6f00ee9 and OS: Android failed to save at date: 2024.08.05 10:46:11

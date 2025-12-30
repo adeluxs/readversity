@@ -1,0 +1,302 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+      <button type="button" id="button-truncate" data-loading-text="{{ text_loading }}" class="btn btn-warning"><i class="fa fa-refresh"></i>&nbsp;&nbsp;{{ button_truncate }}</button>
+        <button type="submit" form="form-whitelist" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i>&nbsp;&nbsp;{{ button_save }}</button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i>&nbsp;&nbsp;{{ button_cancel }}</a></div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %} 
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+         {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %} 
+    <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %} 
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+        <span class="pull-right">{{ text_version }}&nbsp;&nbsp;&nbsp;Extension by:&nbsp;&nbsp;<a href="mailto:todor.donev@gmail.com">Todor Donev</a></span>
+      </div>
+      <div class="panel-body">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-whitelist" class="form-horizontal">
+         <fieldset>
+         <div class="col-sm-12 alert alert-info"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;&nbsp;{{ about_whitelist }}</div>
+         <legend> 
+                {{ text_settings }}
+          </legend>
+          <div class="form-group">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-6">
+            <div class="input-group">
+            <label class="input-group-addon" style="min-width:130px; {{ module_whitelist_status  and  module_whitelist_status  ==  '1' ? 'color: rgb(255, 255, 255);background-color: rgb(92, 184, 92);border-color: rgb(76, 174, 76);' : 'color: rgb(255, 255, 255);background-color: rgb(217, 83, 79);border-color: rgb(212, 63, 58);' }}" for="input-status">&nbsp;&nbsp;{{ entry_status }}&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></label>
+              <select name="module_whitelist_status" id="input-status" class="form-control">
+                {% if module_whitelist_status %} 
+                <option value="1" selected="selected">{{ status_activated }}</option>
+                <option value="0">{{ status_deactivated }}</option>
+                {% else %}   
+                <option value="1">{{ status_activated }}</option>
+                <option value="0" selected="selected">{{ status_deactivated }}</option>
+                {% endif %}  
+              </select>
+            </div>
+          </div>
+         </div>
+          
+          <div class="form-group">
+          <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-6">
+             <div class="input-group">
+             <label class="input-group-addon" style="min-width:130px; color: rgb(255, 255, 255);background-color: rgb(50, 118, 177);border-color: rgb(40, 94, 142);" for="input-response-status">&nbsp;&nbsp;{{ entry_response }}&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></label>
+              <select name="module_whitelist_response" id="input-response-status" class="form-control">
+              <option value="random" {{ module_whitelist_response  and  module_whitelist_response  ==  'random' ? 'selected="selected"' : '' }}>Random Response</option>
+                <option value="301" {{ module_whitelist_response  and  module_whitelist_response  ==  '301' ? 'selected="selected"' : '' }}>301 Moved Permanently</option>
+                <option value="302" {{ module_whitelist_response  and  module_whitelist_response  ==  '302' ? 'selected="selected"' : '' }}>302 Found</option>
+                <option value="303" {{ module_whitelist_response  and  module_whitelist_response  ==  '303' ? 'selected="selected"' : '' }}>303 See Other</option>
+                <option value="307" {{ module_whitelist_response  and  module_whitelist_response  ==  '307' ? 'selected="selected"' : '' }}>307 Temporary Redirect</option>  
+              </select>
+            </div>
+          </div>
+          </div>
+          
+          
+          <div class="form-group">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-6">
+            <div class="input-group">
+            <label class="input-group-addon" style="min-width:130px; {{ module_whitelist_cache_status  and  module_whitelist_cache_status  ==  '1' ? 'color: rgb(255, 255, 255);background-color: rgb(92, 184, 92);border-color: rgb(76, 174, 76);' : '' }}" for="select-cache-status">&nbsp;&nbsp;{{ entry_cache_status }}&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></label>
+              <select name="module_whitelist_cache_status" id="select-cache-status" class="form-control">
+                {% if module_whitelist_cache_status %} 
+                <option value="1" selected="selected">{{ status_activated }}</option>
+                <option value="0">{{ status_deactivated }}</option>
+                {% else %}   
+                <option value="1">{{ status_activated }}</option>
+                <option value="0" selected="selected">{{ status_deactivated }}</option>
+                {% endif %}  
+              </select>
+            </div>
+          </div>
+         </div>
+          
+          
+          <div class="form-group">
+          <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-6">
+             <div class="input-group">
+             <label class="input-group-addon" for="select-cache-type" style="min-width:130px;">&nbsp;&nbsp;{{ entry_cache_type }}&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></label>
+              <select name="module_whitelist_cache_type" id="select-cache-type" class="form-control">
+              <option value="file" {{ module_whitelist_cache_type  and  module_whitelist_cache_type  ==  'file' ? 'selected="selected"' : '' }}> File Cache</option>
+                <option value="mem" {{ module_whitelist_cache_type  and  module_whitelist_cache_type  ==  'mem' ? 'selected="selected"' : '' }}> MemCache</option>
+                <option value="apc" {{ module_whitelist_cache_type  and  module_whitelist_cache_type  ==  'apc' ? 'selected="selected"' : '' }}> APCache</option>
+              </select>
+            </div>
+          </div>
+          </div>
+          
+          
+          <div class="form-group">
+            <div class="col-sm-3">&nbsp;</div>
+            <div class="col-sm-6">
+            <div class="input-group">
+            <label class="input-group-addon" for="input-cache-expire" style="min-width:130px;">&nbsp;&nbsp;{{ entry_cache_expire }}&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></label>
+                {% if module_whitelist_cache_expire %} 
+                <input id="input-cache-expire" class="col-sm-12" type="text" name="module_whitelist_cache_expire"  value="{{ module_whitelist_cache_expire }}">
+                {% else %}
+                <input id="input-cache-expire" class="col-sm-12" type="text" name="module_whitelist_cache_expire"  value="" placeholder="{{ placeholder_cache_expire }}">
+                {% endif %}  
+            </div>
+          </div>
+         </div>
+          
+          
+          <!-- END -->
+          
+          </fieldset>
+          
+          <fieldset>
+          <div class="col-sm-12 alert alert-info"><i class="fa fa-question-circle"></i>&nbsp;&nbsp;&nbsp;{{ text_whitelist_current_ip }}</div>
+              <legend> 
+                {{ text_whitelist_add }}
+                </legend>
+              
+              <div class="form-group required">
+                <!--  -->
+                <div class="col-sm-3">&nbsp;</div>
+                <div class="col-sm-6">
+                  <div class="input-group">
+                  <label class="input-group-addon" for="input-whitelist-ip" style="min-width:85px;">{{ entry_ip }}&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></label>
+                    <input  class="form-control" id="input-whitelist-ip" placeholder="{{ placeholder_ip }}" type="text" value=""/>
+                    <span class="input-group-btn">
+                    <button class="btn btn-primary" data-loading-text="{{ text_loading }}" id="button-whitelist-add" type="button"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;&nbsp;{{ button_whitelist_add }}</button>
+                    </span> </div>
+                    </div>
+              </div>
+              
+              <div class="form-group required">
+               <!--  -->
+               <div class="col-sm-3">&nbsp;</div>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                        <label class="input-group-addon" for="input-whitelist-comment" style="min-width:85px;">{{ entry_comment }}&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></label>
+                                <textarea rows="1" cols="68" style="min-width: 100%;resize:vertical;overflow:auto;" id="input-whitelist-comment" placeholder="{{ placeholder_comment }}" class="form-control"></textarea>
+                        </div>
+                    </div>
+              </div>
+              
+              
+              
+            </fieldset>
+            <br/>
+            <fieldset>
+              <legend> {{ text_whitelist_list }}</legend>
+              <fieldset>
+                <div id="whitelist"></div>
+            </fieldset>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$('#whitelist').delegate('.pagination a', 'click', function(e) {
+	e.preventDefault();
+	$('#whitelist').load(this.href);
+});
+$('#input-whitelist-ip').prop('maxlength', '15');
+$('#input-cache-expire').prop('maxlength', '10');
+$('#input-whitelist-comment').prop('maxlength', '200');
+$('#whitelist').load('index.php?route=extension/module/whitelist/all&user_token={{ user_token }}');
+
+$('#button-whitelist-add').on('click', function() {
+	$.ajax({
+		url: 'index.php?route=extension/module/whitelist/addWhite&user_token={{ user_token }}',
+		type: 'post',
+		dataType: 'json',
+		data: 'ip_address=' + encodeURIComponent($('#input-whitelist-ip').val()) + '&comment=' + encodeURIComponent($('#input-whitelist-comment').val()),
+		beforeSend: function() {
+			$('#button-whitelist-add').button('loading');
+			$('#loading').remove();
+			$('<div id="loading"><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;&nbsp;{{ text_loading }}</div>').prependTo('#whitelist');
+		},
+		complete: function() {
+			$('#button-whitelist-add').button('reset');
+			$('#loading').remove();
+		},
+		success: function(json) {
+		        $('.alert.alert-danger').remove();
+		        $('.alert.alert-success').remove();
+		        $('#loading').remove();
+			if (json['error']) {
+				$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+				setTimeout(function(){ $('.alert.alert-danger').remove(); }, 5000);
+			}
+			
+			if (json['success']) {
+				$('#content > .container-fluid').prepend('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+				$('#whitelist').load('index.php?route=extension/module/whitelist/all&user_token={{ user_token }}');
+				$('#input-whitelist-ip').val('');
+				$('#input-whitelist-comment').val('');
+				setTimeout(function(){ $('.alert.alert-success').remove(); }, 5000);
+			}
+			$('html, body').animate({ scrollTop: 0 }, 700);
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+	});
+});
+
+$('#whitelist').delegate('button', 'click', function() {
+	var element = this;
+	
+	$.ajax({
+		url: 'index.php?route=extension/module/whitelist/delWhite&user_token={{ user_token }}',
+		type: 'post',
+		dataType: 'json',
+		data: 'ip_address=' + encodeURIComponent($(element).val()),
+		beforeSend: function() {
+			$(element).button('loading');
+		},
+		complete: function() {
+			$(element).button('reset');
+		},
+		success: function(json) {
+		        $('.alert.alert-danger').remove();
+		        $('.alert.alert-success').remove();
+			if (json['error']) {
+				$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+				setTimeout(function(){ $('.alert.alert-danger').remove(); }, 5000);
+			}
+			
+			if (json['success']) {
+				$('#content > .container-fluid').prepend('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+				setTimeout(function(){ $('.alert.alert-success').remove(); }, 5000);
+				
+			}
+			        $('#whitelist').load('index.php?route=extension/module/whitelist/all&user_token={{ user_token }}');
+				$('html, body').animate({ scrollTop: 0 }, 700);	
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+			$('#loading').remove();
+			$(element).button('reset');
+			$('.alert.alert-danger').remove();
+		        $('.alert.alert-success').remove();
+		}
+	});
+});
+
+$('#button-truncate').on('click', function() {
+	$.ajax({
+		url: 'index.php?route=extension/module/whitelist/truncate_table&user_token={{ user_token }}',
+		type: 'post',
+		dataType: 'json',
+		data: '',
+		beforeSend: function() {
+			$('#button-truncate').button('loading');
+			$('#loading').remove();
+			$('<div id="loading"><i class="fa fa-circle-o-notch fa-spin"></i>&nbsp;&nbsp;{{ text_loading }}</div>').prependTo('#whitelist');
+		},
+		complete: function() {
+			$('#button-truncate').button('reset');
+			$('#loading').remove();
+		},
+		success: function(json) {
+		        $('.alert.alert-danger').remove();
+		        $('.alert.alert-success').remove();
+		        $('#loading').remove();
+			if (json['error']) {
+			        $('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+			        setTimeout(function(){ $('.alert.alert-danger').remove(); }, 5000);
+                        }
+								
+			if (json['success']) {
+                                $('#content > .container-fluid').prepend('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                                setTimeout(function(){ $('.alert.alert-success').remove(); }, 5000);
+			}
+			$('#input-whitelist-ip').val('');
+			$('#input-whitelist-comment').val('');
+			$('#whitelist').load('index.php?route=extension/module/whitelist/all&user_token={{ user_token }}');
+			$('html, body').animate({ scrollTop: 0 }, 700);
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+			$('#loading').remove();
+			$(element).button('reset');
+			$('.alert.alert-danger').remove();
+		        $('.alert.alert-success').remove();
+		}
+	});
+});
+
+</script>
+{{ footer }}

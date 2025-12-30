@@ -1,0 +1,2 @@
+User:bosunarise@gmail.com with Password:1234qwer signed in, but the macaddress: 0a:00:27:00:00:07 and OS: win32 failed to save at date: 2022.10.06 03:38:46
+User:adegboyegatemitope@gmail.com with Password:babcock signed in, but the macaddress: 44:af:28:0a:5c:21 and OS: win32 failed to save at date: 2022.10.06 08:14:10

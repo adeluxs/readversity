@@ -1,0 +1,5 @@
+User:adelekeolamiposi@gmail.com with Password:Adeleke!23 signed in, but the macaddress: 00:e9:3a:6a:f7:05 and OS: win32 failed to save at date: 2023.06.10 11:30:36
+User:nwabunikeo1995@student.babcock.edu.ng with Password:ARIANAGRANDE signed in, but the macaddress: 146196b6d2ae9058 and OS: Android failed to save at date: 2023.06.10 03:27:51
+User:solarinayomide47@gmail.com with Password:200820051 signed in, but the macaddress: 92f5cca44bdf9438 and OS: Android failed to save at date: 2023.06.10 04:51:23
+User:israeliraoya7@gmail.com with Password:#goodlife4me signed in, but the macaddress: 8e65203391fe50c1 and OS: Android failed to save at date: 2023.06.10 07:27:48
+User:oluwabusayotaiwo440@gmail.com with Password:busayo16 signed in, but the macaddress: 96323b06c6fd2a69 and OS: Android failed to save at date: 2023.06.10 09:00:58

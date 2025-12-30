@@ -1,0 +1,4 @@
+User:nwosus@babcock.edu.ng with Password:SmartChima1234 signed in, but the macaddress: b4bc53683496a234 and OS: Android failed to save at date: 2024.04.26 08:14:34
+User:modupeooreoluwa7@gmail.com with Password:Modupeooreoluwa. signed in, but the macaddress: f8:16:54:9a:e9:03 and OS: win32 failed to save at date: 2024.04.26 12:49:14
+User:modupeooreoluwa7@gmail.com with Password:Modupeooreoluwa. signed in, but the macaddress: f8:16:54:9a:e9:03 and OS: win32 failed to save at date: 2024.04.26 12:49:51
+User:clementubajaka@gmail.com with Password:Baking22_ signed in, but the macaddress: d2e16b29-91fc-43bc-8c27-38d503c2280f and OS: Android failed to save at date: 2024.04.26 06:54:53

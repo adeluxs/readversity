@@ -1,0 +1,11 @@
+User:akinyemi0423@student.babcck.com with Password:Emmanuella120 signed in, but the macaddress: a0:c5:89:27:f5:d8 and OS: win32 failed to save at date: 2022.08.12 09:25:35
+User:ayomolaobanijesu@gmail.com with Password:joshua/1503 signed in, but the macaddress: 3dcf64ee-ec97-409c-bb33-ccc905e68f99 and OS: Android failed to save at date: 2022.08.12 09:41:19
+User:charlesobunadike@outlook.com with Password:ernest1234 signed in, but the macaddress: 3a61f648-987e-468f-82c3-9ea2164c7c01 and OS: Android failed to save at date: 2022.08.12 11:05:36
+User:nwanejuaforprecious@gmail.com with Password:20050817 signed in, but the macaddress: 3e27e963-9436-4223-96fb-42764003e4e1 and OS: Android failed to save at date: 2022.08.12 01:27:12
+User:olaitan7361@student.babcock.edu.ng with Password:Precious11# signed in, but the macaddress: c768d4d9-6507-42c7-867f-33e24904cc34 and OS: Android failed to save at date: 2022.08.12 07:01:04
+User:AKINTOYE1558@student.babcock.edu.ng with Password:AKINTOYE2005 signed in, but the macaddress: 0dae9389-b59e-4c2b-8acb-7884f9e07aa9 and OS: Android failed to save at date: 2022.08.12 07:08:29
+User:azogunmolade@gmail.com with Password:Azeezah1 signed in, but the macaddress: e78120c2-37e1-43c4-b317-2c03ecade9c2 and OS: Android failed to save at date: 2022.08.12 08:04:41
+User:azeezahosheku@gmail.com with Password:Azeezah1 signed in, but the macaddress: d9babb41-fc70-41d2-8f3e-e15a4d9c56ba and OS: Android failed to save at date: 2022.08.12 08:12:36
+User:Chiedozie-Ezeasor2270@student.babcock.edu.ng with Password:h5WfDEb2ce signed in, but the macaddress: bf30d238-6ba0-43c4-9f95-a4d24352c9a5 and OS: Android failed to save at date: 2022.08.12 09:32:09
+User:mosopetowoju@gmail.com with Password:eni05ola signed in, but the macaddress: 61a0fef8-2b13-490a-985d-37ac82498ccb and OS: Android failed to save at date: 2022.08.12 10:02:12
+User:eniolaakapo16@gmail.com with Password:grace123 signed in, but the macaddress: 60:e3:2b:d5:6f:74 and OS: win32 failed to save at date: 2022.08.12 11:28:55

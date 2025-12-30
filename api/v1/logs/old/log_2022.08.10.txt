@@ -1,0 +1,13 @@
+User:jimoh9907@student.babcock.edu.ng with Password:Bonaventure16 signed in, but the macaddress: 53890dc3-2db1-4531-8ff4-ab6051d58890 and OS: Android failed to save at date: 2022.08.10 09:55:15
+User:victoriauche018@gmail.com with Password:200416 signed in, but the macaddress: 5361ab9b-dcf0-4282-87fd-c1ee5d9a7bfd and OS: Android failed to save at date: 2022.08.10 09:56:23
+User:temiomodunbi@gmail.com with Password:mercydajuel02 signed in, but the macaddress: f0:d5:bf:d2:7d:dc and OS: win32 failed to save at date: 2022.08.10 10:04:41
+User:emmanuellabamidele@gmail.com with Password:A2029JEA signed in, but the macaddress: c82cc521-fb00-4dc0-b546-912c099cd1aa and OS: Android failed to save at date: 2022.08.10 10:47:06
+User:williams2164@student.babcock.edu.ng with Password:fDsNvGCxA7G25jX signed in, but the macaddress: d5b25f1c-f33f-4e58-a513-6ab53841d6b4 and OS: Android failed to save at date: 2022.08.10 10:59:12
+User:charlesobunadike@outlook.com with Password:ernest1234 signed in, but the macaddress: e500de63-0a92-48f0-80a8-f2f1d4671c91 and OS: Android failed to save at date: 2022.08.10 11:01:58
+User:olarinoye9545@student.babcock.edu.ng with Password:babadudu signed in, but the macaddress: 8213673c-6508-4093-abb8-658064fde287 and OS: Android failed to save at date: 2022.08.10 12:28:29
+User:basseyemediong@gmail.com with Password:Eme@64583288 signed in, but the macaddress: 15dcfeb7-39dd-48be-9a9f-5a02ba4d3c00 and OS: Android failed to save at date: 2022.08.10 02:07:50
+User:odunaiya2567@student.babcock.edu.ng with Password:Odunaiya123 signed in, but the macaddress: 0a:00:27:00:00:08 and OS: win32 failed to save at date: 2022.08.10 03:22:40
+User:onisarotu5279@student.babcock.edu.ng with Password:onisarotu05 signed in, but the macaddress: 0a:00:27:00:00:0c and OS: win32 failed to save at date: 2022.08.10 03:44:20
+User:sultanegbeyemi7@gmail.com with Password:mypassword#123 signed in, but the macaddress: 1693c8fe-09d7-4d14-a3ea-96e5d96e9c2a and OS: Android failed to save at date: 2022.08.10 04:15:41
+User:ganyanwu97@gmail.com with Password:adanna signed in, but the macaddress: c4708da5-7321-4ab6-972a-bf5b7cc7101e and OS: Android failed to save at date: 2022.08.10 04:24:32
+User:chijioke0984@student.babcock.edu.ng with Password:IHATEMYLIFE signed in, but the macaddress: 34:f6:4b:cc:49:94 and OS: win32 failed to save at date: 2022.08.10 10:31:54

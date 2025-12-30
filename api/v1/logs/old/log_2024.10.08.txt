@@ -1,0 +1,9 @@
+User:Adebayoa3752@student.babcock.edu.ng with Password:Rahman123 signed in, but the macaddress: d7d8399e7376a012 and OS: Android failed to save at date: 2024.10.08 05:28:18
+User:arasomwantobenna@gmail.com with Password:happy@2.0 signed in, but the macaddress: 6e263832e8998648 and OS: Android failed to save at date: 2024.10.08 07:09:14
+User:ayovictoria232@gmail.com with Password:Godsown@1 signed in, but the macaddress: 1e0178924b67b678 and OS: Android failed to save at date: 2024.10.08 07:18:14
+User:alawiyemorounkeji@gmail.com with Password:lockbook2002 signed in, but the macaddress: e0d7447e658d9c44 and OS: Android failed to save at date: 2024.10.08 08:11:12
+User:shobob@babcock.edu.ng with Password:Imely0.9 signed in, but the macaddress: b0:5a:da:f1:cd:60 and OS: win32 failed to save at date: 2024.10.08 08:42:29
+User:shobob@babcock.edu.ng with Password:Imely0.9 signed in, but the macaddress: b0:5a:da:f1:cd:60 and OS: win32 failed to save at date: 2024.10.08 08:42:44
+User:ndubuisi-ogbonnal@babcock.edu.ng with Password:chibueze@5 signed in, but the macaddress: a4:fc:77:2e:1e:fd and OS: win32 failed to save at date: 2024.10.08 12:52:41
+User:adeyinka.akintunde@gmail.com with Password:yinka123 signed in, but the macaddress: 34:f3:9a:b8:ea:57 and OS: win32 failed to save at date: 2024.10.08 01:36:59
+User:adeyinka.akintunde@gmail.com with Password:yinka123 signed in, but the macaddress: 34:f3:9a:b8:ea:57 and OS: win32 failed to save at date: 2024.10.08 01:38:28

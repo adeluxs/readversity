@@ -1,0 +1,6 @@
+User:Adebayoa3752@student.babcock.edu.ng with Password:Rahman123 signed in, but the macaddress: d7d8399e7376a012 and OS: Android failed to save at date: 2024.10.07 06:13:18
+User:josephsanusi4@gmail.com with Password:SamAkandeCis213121 signed in, but the macaddress: bad0f59f-09d3-42c8-a00a-6b51f99ee951 and OS: Android failed to save at date: 2024.10.07 06:24:58
+User:mkelechi738@gmail.com with Password:Barcelona10@ signed in, but the macaddress: 1a6d6b8b74754f2e and OS: Android failed to save at date: 2024.10.07 01:12:32
+User:praisedaniels16@gmail.com with Password:Pradom@2112 signed in, but the macaddress: 1ca5f98f26448de0 and OS: Android failed to save at date: 2024.10.07 01:57:38
+User:oyekaleo@babcock.edu.ng with Password:oyekaleo@ signed in, but the macaddress: 00:27:10:8d:26:d4 and OS: win32 failed to save at date: 2024.10.07 03:10:30
+User:nwokochaa@babcock.edu.ng with Password:nwokochaa@ signed in, but the macaddress: a4:34:d9:e7:bc:1a and OS: win32 failed to save at date: 2024.10.07 03:45:04

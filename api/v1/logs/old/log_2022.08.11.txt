@@ -1,0 +1,6 @@
+User:osajele3970@student.babcock.edu.ng with Password:valmonT123 signed in, but the macaddress: 74:4c:a1:a0:00:53 and OS: win32 failed to save at date: 2022.08.11 03:23:47
+User:oretom13@gmail.com with Password:CT2BtwQEfHXwZUg signed in, but the macaddress: c836e26c-09ca-43ea-9e02-e7298a985be4 and OS: Android failed to save at date: 2022.08.11 07:12:31
+User:oyindamolaotinwa2005@gmail.com with Password:Oyinda05 signed in, but the macaddress: a8:93:4a:e7:1a:e9 and OS: win32 failed to save at date: 2022.08.11 07:20:30
+User:chidinmaruth49@gmail.com with Password:okaforruth signed in, but the macaddress: ec:2e:98:5e:a8:6f and OS: win32 failed to save at date: 2022.08.11 08:08:40
+User:darahjibodu04@gmail.com with Password:darahh2707 signed in, but the macaddress: 20:4e:f6:0f:01:65 and OS: win32 failed to save at date: 2022.08.11 08:37:17
+User:ebhodaghe7860@student.babcock.edu.ng with Password:Daisy@2004 signed in, but the macaddress: 85019bb7-bbeb-4666-bb9e-ea08f69c7ba3 and OS: Android failed to save at date: 2022.08.11 08:52:19

@@ -1,0 +1,13 @@
+User:odukoya2259@student.babcock.edu.ng with Password:Od5k4y11njola signed in, but the macaddress: 4c:bb:58:be:18:45 and OS: win32 failed to save at date: 2022.06.22 11:29:29
+User:ayindejennifer4@gmail.com with Password:ayindej1234 signed in, but the macaddress: f34841c6-54da-4695-9d53-42c325a9f08d and OS: Android failed to save at date: 2022.06.22 03:02:38
+User:oyinyeofor@gmail.com with Password:onyinyeofor signed in, but the macaddress: 75a1a2c5-8a6a-4142-9fa2-46f1ffcb9f06 and OS: Android failed to save at date: 2022.06.22 03:18:01
+User:demiladeolad@gmail.com with Password:Demilade15 signed in, but the macaddress: a8:93:4a:e3:fe:a1 and OS: win32 failed to save at date: 2022.06.22 03:44:45
+User:uzochukwu3551@student.babcock.edu.ng with Password:2505 signed in, but the macaddress: b73a68e5-bc88-4eb6-ab96-debd75bb19e0 and OS: Android failed to save at date: 2022.06.22 03:54:03
+User:adrianikeaba@gmail.com with Password:Ogiditown1 signed in, but the macaddress: 9f388105-af4f-483d-aa38-d1db4a66fca8 and OS: Android failed to save at date: 2022.06.22 04:27:56
+User:angieogidan@gmail.com with Password:ogidanfamily signed in, but the macaddress: 67001167-9c08-4555-bedc-d959bdcf2516 and OS: Android failed to save at date: 2022.06.22 06:21:11
+User:aasa1843@student.babcock.edu.ng with Password:aasafisayo signed in, but the macaddress: 7de3434a-faa2-4da8-aefe-6d1b7fce60a9 and OS: Android failed to save at date: 2022.06.22 06:25:47
+User:ikeora6069@student.babcock.edu.ng with Password:tobenna2012 signed in, but the macaddress: 64:6c:80:b8:d0:37 and OS: win32 failed to save at date: 2022.06.22 07:51:01
+User:Alawode7978@student.babcock.edu.ng with Password:romilola2004 signed in, but the macaddress: 20:4e:f6:10:65:b1 and OS: win32 failed to save at date: 2022.06.22 08:36:35
+User:dadagreat14@gmail.com with Password:great2005 signed in, but the macaddress: 57ee6281-5c3a-4e06-b515-c04d25d9b65a and OS: Android failed to save at date: 2022.06.22 08:44:17
+User:okoriennamdi70@gmail.com with Password:kingslayer3002 signed in, but the macaddress: 2b7acd5c-ae65-42b2-a9fa-ebfb7c2508a9 and OS: Android failed to save at date: 2022.06.22 09:47:29
+User:okoro5975@student.babcock.edu.ng with Password:Amaliski12 signed in, but the macaddress: 58a4b61f-4f34-4b89-9eb6-c08516172c0c and OS: Android failed to save at date: 2022.06.22 09:53:48

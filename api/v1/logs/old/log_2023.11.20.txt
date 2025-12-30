@@ -1,0 +1,2 @@
+User:sadeadeyemi1969@gmail.com with Password:Masters1 signed in, but the macaddress: 5c:c5:d4:f7:93:38 and OS: win32 failed to save at date: 2023.11.20 08:16:13
+User:abdullahi0020@pg.Babcock.edu.ng with Password:1234567890 signed in, but the macaddress: d94076df-ebd8-4026-8ad9-0d26a54ff775 and OS: Android failed to save at date: 2023.11.20 09:12:29

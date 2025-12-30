@@ -1,0 +1,50 @@
+/* Admin Collapsible Sidebar */
+nav #menu {
+	opacity: 1!important;
+	transition: 0.4s!important;
+}
+nav #stats {
+	opacity: 1!important;
+	transition: 0.4s!important;
+	display: none!important;
+}
+nav #navigation { display: none; }
+@media screen and (min-width: 768px) {
+	#content { padding-left: 42px!important; }
+	#column-left {
+        position: fixed!important;
+        left: -194px!important;
+        overflow-x: hidden!important;
+        transition: 0.4s!important;
+	}
+	nav #menu { opacity: 0!important; }
+	nav #stats { opacity: 0!important; }
+	nav #mouseover {
+        display: block!important;
+        position: absolute!important;
+        font-size: 1em!important;
+        top: 50%!important;
+        z-index: 999!important;
+        color: rgba(255,255,255,1.00)!important;
+        left: 210px!important;
+        pointer-events: none!important;
+				opacity: 0.5!important;
+				transition: 0.4s!important;
+    }
+	#column-left:hover {
+				left: 0!important;
+				overflow-x: scroll!important;
+	}
+	#column-left:hover #menu { opacity: 1!important; }
+	#column-left:hover #stats { opacity: 1!important; }
+	#column-left:hover #mouseover { opacity: 0!important; top: 0!important; }
+}
+@media screen and (max-width: 767px) {
+	nav #mouseover { display: none!important; }
+	nav #menu { margin-top: 0!important; }
+}
+#column-left + #content, #column-left + #content + #footer {
+	left: 0!important;
+	margin-left: 0!important;
+	margin-top: 78px!important;
+}

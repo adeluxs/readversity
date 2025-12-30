@@ -1,0 +1,138 @@
+{{ header }}{{ column_left }}
+<div id="content">
+	<div class="page-header">
+		<div class="container-fluid">
+		<div class="pull-right">
+			<a href="https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=38587" target="_blank" data-toggle="tooltip" title="{{ text_buy_proversion }}" class="btn btn-warning">{{ text_buy_proversion }}</a>
+		</div>
+			<h1>{{ heading_title }}</h1>
+			<ul class="breadcrumb">
+				{% for breadcrumb in breadcrumbs %}
+				<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid">
+		{% if error_warning %}
+		<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+		</div>
+		{% endif %}
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title"><i class="fa fa-upload"></i> {{ text_form }}</h3>
+			</div>
+			<div class="panel-body">
+				<form id="form-customer-import" class="form-horizontal">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group">
+								<label class="col-sm-12 control-label" style="text-align: left;"><span data-toggle="tooltip" title="{{ help_file }}">{{ entry_file }}{{ entry_go_to_pro }}</span></label>
+								<div class="col-sm-12">
+									<div class="select-file">
+										<input type="file" name="find_file" accept=".xls,.xlsx,.csv" id="input-file" required="required" />
+										<div class="dummy-file">
+											<div class="success">{{ entry_great }}</div>
+											<div class="warning"><i class="fa fa-times-circle" aria-hidden="true"></i> Invalid</div>
+											<div class="default">{{ entry_dragfile }}</div>
+											<br/>
+											<small class="small"></small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+							<div class="col-sm-4">				
+								<div class="form-group">
+									<label class="col-sm-6 control-label" for="input-importon"><span data-toggle="tooltip" title="{{ help_importon }}">{{ entry_importon }}{{ entry_go_to_pro }}</span></label>
+									<div class="form-check">
+										  <div class="radio-tabs">
+											<input type="radio" id="customer_id" class="form-check-input ishi-radio-tab-child" name="find_importon" value="customer_id" checked="checked" /><label class="radio-inline" for="customer_id">{{ text_customer_id }}</label>
+											<input type="radio" id="email" class="form-check-input ishi-radio-tab-child" name="find_importon" value="email" /><label class="radio-inline" for="email">{{ text_email }}</label>
+										  </div>
+									</div>
+								</div>
+							</div>	
+							<div class="col-sm-4">
+								<div class="form-group">
+									<label class="col-sm-5 control-label" for="input-existsupdate"><span data-toggle="tooltip" title="{{ help_existsupdate }}">{{ entry_existsupdate }}{{ entry_go_to_pro }}</span></label>
+									<div class="form-check">
+										  <div class="radio-tabs">
+											<input type="radio" id="yes" class="form-check-input ishi-radio-tab-child" name="find_existsupdate" value="1" checked="checked" /><label class="radio-inline" for="yes">{{ text_yes }}</label>
+											<input type="radio" id="no" class="form-check-input ishi-radio-tab-child" name="find_existsupdate" value="0" /><label class="radio-inline" for="no">{{ text_no }}</label>
+										  </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+							<div class="form-group">
+								<label class="col-sm-5 control-label" for="input-passwordtype"><span data-toggle="tooltip" title="{{ help_passwordtype }}">{{ entry_passwordtype }}{{ entry_go_to_pro }}</span></label>
+								<div class="form-check">
+									  <div class="radio-tabs">
+										<input type="radio" id="encrypter" class="form-check-input ishi-radio-tab-child" name="find_passwordtype" value="encrypter" checked="checked" /><label class="radio-inline" for="encrypter">{{ text_encrypter }}</label>
+										<input type="radio" id="plan" class="form-check-input ishi-radio-tab-child" name="find_passwordtype" value="plan" /><label class="radio-inline" for="plan">{{ text_plan }}</label>
+									  </div>
+								</div>
+							</div>
+							</div>
+							<div class="col-sm-12">
+							<div class="form-group">
+				                <label class="col-sm-12 control-label" style="text-align: left;"><span data-toggle="tooltip" title="{{ help_cell_operation }}">{{ entry_cell_operation }}{{ entry_go_to_pro }}</span></label>
+				                <div class="col-sm-12">
+				                  <div class="well well-sm" style="height: 250px; overflow: auto;">
+				                    {% for cell_key,cell_operation in cell_operations %}
+				                    <div class="checkbox">
+				                      <label>
+				                        <h4><input type="checkbox" name="find_cell_operations[{{ cell_key }}]" value="1" checked="checked" />
+				                        {{ cell_operation }}</h4>
+				                      </label>
+				                    </div>
+				                    {% endfor %}
+				                  </div>
+				                  <a onclick="$(this).parent().find(':checkbox').prop('checked', true);" class="btn btn-primary btn-xs">{{ text_all }}</a>
+				                  <a onclick="$(this).parent().find(':checkbox').prop('checked', false);"  class="btn btn-primary btn-xs">{{ text_unall }}</a>
+				                </div>
+				              </div>
+							  </div>
+							<div class="col-sm-12">
+							<div class="buttons imports">
+								<div class="col-sm-6">
+								<button type="button" id="importer-customer" class="btn btn-success btn-block"><i class="fa fa-upload"></i> {{ button_import }}</button>
+								</div>
+								<div class="col-sm-6">
+								<a href="{{ sample_file }}" download class="btn btn-default btn-block"><i class="fa fa-download"></i> {{ button_download }}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="ishiloader"></div>
+<script type="text/javascript"><!--
+	$('#siteloader').fadeOut();
+    $('#spin-wrapper').fadeOut();
+	
+$('#input-file').change(function() {
+	var fullPath = document.getElementById('input-file').value;
+	if (fullPath) {
+		var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+		var filename = fullPath.substring(startIndex);
+		if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+				filename = filename.substring(1);
+		}
+		$('.dummy-file').removeClass('warning').find('.warning').html('');
+		$('.dummy-file').find('.success').html('{{ entry_great }}');
+		$('.dummy-file .small').html(filename);
+	}
+});
+
+// Importer customer
+$('#importer-customer').click(function() {
+	alert('all customer import using pro version');
+});
+//--></script>
+</div>
+{{ footer }}

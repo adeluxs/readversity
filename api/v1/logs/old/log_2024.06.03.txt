@@ -1,0 +1,2 @@
+User:akomeji@gmail.com with Password:coachd signed in, but the macaddress: 39e419f7e07fa2e2 and OS: Android failed to save at date: 2024.06.03 05:49:14
+User:owodetobi@gmail.com with Password:4koolguyzz signed in, but the macaddress: ce64a0ee-722f-446c-bbaf-06ddbddd69a4 and OS: Android failed to save at date: 2024.06.03 12:37:07
