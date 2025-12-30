@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Viewer</title>
+    <style>
+        .desktop-only {
+            display: none;
+        }
+        .mobile-only {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Disable text selection */
+        body {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        /* Disable text highlighting */
+        ::selection {
+            background: transparent;
+        }
+
+        /* Prevent right-click */
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide content from print */
+        @media print {
+            body {
+                display: none;
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop-only">
+        <div style="position: relative; width: 100%; height: 120000px; padding-top: 141.4286%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; overflow: hidden; border-radius: 8px; will-change: transform;">
+            <iframe id="contentFrame" loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; display: none;"
+                    src="https://docs.google.com/document/d/e/2PACX-1vQnVpjlEiOLiER_ZdhOGA6FW3fILgot_GWm53cbOYxStrIc12KG1phY-ypiWsk6GIX6Gmy1z3bw48H7/pub?embedded=true" allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
+            <div class="overlay" id="overlay" style="display: none;"></div>
+        </div>
+        <a href="#" target="_blank" rel="noopener">Webview</a> by LockBook
+    </div>
+
+    <div class="mobile-only">
+        This content is only viewable on a desktop device. Please use a desktop computer to access the document.
+    </div>
+
+    <script>
+    
+        let userEmail = prompt("Please enter your email address:");
+        const openPassword = "open_password"; // Password to open the document
+        const actionPassword = "action_password"; // Password for highlighting and printing
+
+        // Generate a random IP address with fixed first six numbers
+        function getRandomIp() {
+            return `192.168.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}`;
+        }
+        
+        function promptPassword(message) {
+            let userPassword = prompt(message);
+            return userPassword;
+        }
+
+        function verifyPassword(correctPassword, message) {
+            let userPassword = promptPassword(message);
+            if (userPassword === correctPassword) {
+                return true;
+            } else {
+                alert("Incorrect password.");
+                //window.close();
+                return false;
+            }
+        }
+
+        // Function to detect if the user is on a mobile device
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+        }
+
+        // Function to request full screen
+        function requestFullScreen(element) {
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            } else if (element.mozRequestFullScreen) { // Firefox
+                element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                element.webkitRequestFullscreen();
+            } else if (element.msRequestFullscreen) { // IE/Edge
+                element.msRequestFullscreen();
+            }
+        }
+
+        // Function to enforce full screen
+        function enforceFullScreen() {
+            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+                requestFullScreen(document.documentElement);
+            }
+        }
+
+        // Listen for fullscreen change events
+        document.addEventListener('fullscreenchange', enforceFullScreen);
+        document.addEventListener('mozfullscreenchange', enforceFullScreen);
+        document.addEventListener('webkitfullscreenchange', enforceFullScreen);
+        document.addEventListener('msfullscreenchange', enforceFullScreen);
+
+        // Initial full screen request and password prompt
+        if (!isMobileDevice()) {
+            document.querySelector('.desktop-only').style.display = 'block';
+            if (verifyPassword(openPassword, "Enter the password to view the document:")) {
+                document.getElementById('contentFrame').style.display = 'block';
+                document.getElementById('overlay').style.display = 'block';
+                enforceFullScreen();
+            }
+        } else {
+            document.querySelector('.mobile-only').style.display = 'block';
+        }
+
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable key shortcuts (Ctrl+C, Ctrl+V, Ctrl+X, Ctrl+U, Ctrl+P, Ctrl+A, PrintScreen)
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (['c', 'v', 'x', 'u', 'p', 'a', 's', 'i', 'j'].includes(e.key) || e.key === 'PrintScreen')) {
+                if (!verifyPassword(actionPassword, "Enter the password to perform this action:")) {
+                    e.preventDefault();
+                    alert("Action is disabled on this page.");
+                }
+            }
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C'))) {
+                e.preventDefault();
+                alert(`Developer tools are disabled on this page. Further actions would revoke access for your account. Your IP address (${getRandomIp()}) has been logged.`);
+            }
+            
+            
+        });
+
+        // Disable text selection
+        document.onselectstart = function() {
+            if (!verifyPassword(actionPassword, "Enter the password to highlight:")) {
+                return false;
+            }
+        };
+
+        // Disable double-click text selection
+        document.addEventListener('mousedown', function(e) {
+            if (e.detail > 1) {
+                if (!verifyPassword(actionPassword, "Enter the password to highlight:")) {
+                    e.preventDefault();
+                }
+            }
+        }, false);
+
+        // Prevent printing via media query
+        const mediaQueryList = window.matchMedia('print');
+        mediaQueryList.addListener((mql) => {
+            if (mql.matches) {
+                if (!verifyPassword(actionPassword, "Enter the password to print:")) {
+                    alert(`Printing is disabled on this page. Further actions would revoke access for your account. Your IP address (${getRandomIp()}) has been logged.`);
+                    window.stop();
+                }
+            }
+        });
+
+        // Prevent printing by intercepting print requests
+        window.onbeforeprint = function() {
+            if (!verifyPassword(actionPassword, "Enter the password to print:")) {
+                alert(`Printing is disabled on this page. Further actions would revoke access for your account. Your IP address (${getRandomIp()}) has been logged.`);
+                window.stop();
+            }
+        };
+
+        window.onafterprint = function() {
+            if (!verifyPassword(actionPassword, "Enter the password to print:")) {
+                alert(`Printing is disabled on this page. Further actions would revoke access for your account. Your IP address (${getRandomIp()}) has been logged.`);
+                window.stop();
+            }
+        };
+
+        // Prevent printing by intercepting key events
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'p' || e.key === 'PrintScreen')) {
+                if (!verifyPassword(actionPassword, "Enter the password to print:")) {
+                    e.preventDefault();
+                    alert(`Printing is disabled on this page. Further actions would revoke access for your account. Your IP address (${getRandomIp()}) has been logged.`);
+                }
+            }
+        });
+
+        // Attempt to prevent screenshots (limited effectiveness)
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                document.body.style.opacity = '0';
+            } else {
+                document.body.style.opacity = '1';
+            }
+        });
+
+        // Additional security measures
+        // Disable drag-and-drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+
+        // Prevent copying of content via clipboard API
+        document.addEventListener('copy', function(e) {
+            if (!verifyPassword(actionPassword, "Enter the password to copy content:")) {
+                e.preventDefault();
+                alert(`Copying content is disabled. Further actions would revoke access for your account. Your IP address (${getRandomIp()}) has been logged.`);
+            }
+        });
+
+        // Prevent pasting content
+        document.addEventListener('paste', function(e) {
+            if (!verifyPassword(actionPassword, "Enter the password to paste content:")) {
+                e.preventDefault();
+                alert(`Pasting content is disabled. Further actions would revoke access for your account. Your IP address (${getRandomIp()}) has been logged.`);
+            }
+        });
+
+        // Prevent saving via Ctrl+S
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 's') {
+                if (!verifyPassword(actionPassword, "Enter the password to save content:")) {
+                    e.preventDefault();
+                    alert(`Saving content is disabled. Further actions would revoke access for your account. Your IP address (${getRandomIp()}) has been logged.`);
+                }
+            }
+        });
+
+        // Constantly monitor and enforce full screen
+        setInterval(enforceFullScreen, 1000);
+    </script>
+</body>
+</html>

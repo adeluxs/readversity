@@ -1,0 +1,552 @@
+[12-Feb-2021 23:45:30.638159] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = jrobshaw@proexe.net
+cart_login_id = '35' (only when required)
+output = Failed
+There is no customer with email address 'jrobshaw@proexe.net'
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Feb-2021 23:45:30.887691] ####################################
+##################################################################
+action = add_customer
+parameters = James Robshaw|jrobshaw@proexe.net||02-12-2021|unlimited||2||1|0
+cart_login_id = '35' (only when required)
+output = OK
+"74396"
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Feb-2021 23:45:31.056956] ####################################
+##################################################################
+action = grant_file_access
+parameters = 74396|241390|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Feb-2021 23:45:44.827198] ####################################
+##################################################################
+action = get_customer_license
+parameters = 74396
+cart_login_id = '' (only when required)
+output = -----BEGIN PDC Viewer LICENSE FOR: James Robshaw (jrobshaw@proexe.net)-----
+
+43659fbf29b4a5d37ea06392a4e4852fde227e23be21be9d22866cf977c06429a3037f54c6bc12967e3da906b0d83da319ee044f7fc27c601dee961d41ab3... (protected and trimmed for log security)
+-----END PDC Viewer LICENSE FOR: James Robshaw (jrobshaw@proexe.net)-----
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[09-Jul-2021 18:18:41.198649] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = ceo@lockbook.org
+cart_login_id = '39' (only when required)
+output = OK
+"77703" "Israel Kehinde" "ceo@lockbook.org" "" "07-09-2021" "never" "1" "false" "false" "264048," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[09-Jul-2021 18:18:41.462605] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77703|264079|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 01:04:59.023597] ####################################
+##################################################################
+action = get_customer_license
+parameters = 77703
+cart_login_id = '' (only when required)
+output = -----BEGIN PDC Viewer LICENSE FOR: Israel Kehinde (ceo@lockbook.org)-----
+c66e87ab1da505593a6df4f74eb0bf128f4093e842e7a3c88cad0390b7b0e3a39684dccf1db63c32aac85d9b0aad98823a93c7d86f6013d055cfb344533fe... (protected and trimmed for log security)
+-----END PDC Viewer LICENSE FOR: Israel Kehinde (ceo@lockbook.org)-----
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 13:48:21.193378] ####################################
+##################################################################
+action = get_customer_license
+parameters = 77703
+cart_login_id = '' (only when required)
+output = -----BEGIN PDC Viewer LICENSE FOR: Israel Kehinde (ceo@lockbook.org)-----
+c66e87ab1da505593a6df4f74eb0bf128f4093e842e7a3c88cad0390b7b0e3a39684dccf1db63c32aac85d9b0aad98823a93c7d86f6013d055cfb344533fe... (protected and trimmed for log security)
+-----END PDC Viewer LICENSE FOR: Israel Kehinde (ceo@lockbook.org)-----
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 18:44:27.726555] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = ceo@lockbook.org
+cart_login_id = '39' (only when required)
+output = OK
+"77703" "Israel Kehinde" "ceo@lockbook.org" "" "07-09-2021" "never" "1" "false" "false" "264048,264079," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 18:44:28.028758] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77703|264396|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 18:44:30.175489] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = ceo@lockbook.org
+cart_login_id = '39' (only when required)
+output = OK
+"77703" "Israel Kehinde" "ceo@lockbook.org" "" "07-09-2021" "never" "1" "false" "false" "264048,264079,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 18:44:30.297288] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77703|264048|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 18:45:25.264391] ####################################
+##################################################################
+action = get_customer_license
+parameters = 77703
+cart_login_id = '' (only when required)
+output = -----BEGIN PDC Viewer LICENSE FOR: Israel Kehinde (ceo@lockbook.org)-----
+c66e87ab1da505593a6df4f74eb0bf128f4093e842e7a3c88cad0390b7b0e3a39684dccf1db63c32aac85d9b0aad98823a93c7d86f6013d055cfb344533fe... (protected and trimmed for log security)
+-----END PDC Viewer LICENSE FOR: Israel Kehinde (ceo@lockbook.org)-----
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 18:50:18.374631] ####################################
+##################################################################
+action = get_customer_license
+parameters = 77703
+cart_login_id = '' (only when required)
+output = -----BEGIN PDC Viewer LICENSE FOR: Israel Kehinde (ceo@lockbook.org)-----
+c66e87ab1da505593a6df4f74eb0bf128f4093e842e7a3c88cad0390b7b0e3a39684dccf1db63c32aac85d9b0aad98823a93c7d86f6013d055cfb344533fe... (protected and trimmed for log security)
+-----END PDC Viewer LICENSE FOR: Israel Kehinde (ceo@lockbook.org)-----
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:08:08.921298] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = oyerindeenoch@gmail.com
+cart_login_id = '63' (only when required)
+output = Failed
+There is no customer with email address 'oyerindeenoch@gmail.com'
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:08:09.158895] ####################################
+##################################################################
+action = add_customer
+parameters = Enoch Oyerinde|oyerindeenoch@gmail.com||07-11-2021|unlimited||1||1|0
+cart_login_id = '63' (only when required)
+output = OK
+"77731"
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:08:09.461133] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77731|264396|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:08:12.035147] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = oyerindeenoch@gmail.com
+cart_login_id = '63' (only when required)
+output = OK
+"77731" "Enoch Oyerinde" "oyerindeenoch@gmail.com" "" "07-11-2021" "never" "1" "false" "false" "264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:08:12.166181] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77731|264048|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:43:54.499317] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = oyerindeenoch@gmail.com
+cart_login_id = '63' (only when required)
+output = OK
+"77731" "Enoch Oyerinde" "oyerindeenoch@gmail.com" "" "07-11-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:43:57.858578] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77731|264396|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:44:00.024211] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = oyerindeenoch@gmail.com
+cart_login_id = '63' (only when required)
+output = OK
+"77731" "Enoch Oyerinde" "oyerindeenoch@gmail.com" "" "07-11-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:44:01.221534] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77731|264048|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:45:07.354279] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = oyerindeenoch@gmail.com
+cart_login_id = '63' (only when required)
+output = OK
+"77731" "Enoch Oyerinde" "oyerindeenoch@gmail.com" "" "07-11-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:45:07.550925] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77731|264396|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:45:10.761080] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = oyerindeenoch@gmail.com
+cart_login_id = '63' (only when required)
+output = OK
+"77731" "Enoch Oyerinde" "oyerindeenoch@gmail.com" "" "07-11-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[11-Jul-2021 22:45:11.960062] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77731|264048|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:33:46.836472] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = semiloreblessing7@gmail.com
+cart_login_id = '125' (only when required)
+output = Failed
+There is no customer with email address 'semiloreblessing7@gmail.com'
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:33:47.039699] ####################################
+##################################################################
+action = add_customer
+parameters = Blessing  Semilore|semiloreblessing7@gmail.com||07-12-2021|unlimited||1||1|0
+cart_login_id = '125' (only when required)
+output = OK
+"77732"
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:33:47.303267] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77732|264396|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:33:49.452068] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = semiloreblessing7@gmail.com
+cart_login_id = '125' (only when required)
+output = OK
+"77732" "Blessing  Semilore" "semiloreblessing7@gmail.com" "" "07-12-2021" "never" "1" "false" "false" "264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:33:49.589190] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77732|264048|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:44:14.719600] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = semiloreblessing7@gmail.com
+cart_login_id = '125' (only when required)
+output = OK
+"77732" "Blessing  Semilore" "semiloreblessing7@gmail.com" "" "07-12-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:44:14.978785] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77732|264396|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:44:17.189776] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = semiloreblessing7@gmail.com
+cart_login_id = '125' (only when required)
+output = OK
+"77732" "Blessing  Semilore" "semiloreblessing7@gmail.com" "" "07-12-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:44:17.310134] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77732|264048|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:50:50.202543] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = semiloreblessing7@gmail.com
+cart_login_id = '125' (only when required)
+output = OK
+"77732" "Blessing  Semilore" "semiloreblessing7@gmail.com" "" "07-12-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:50:50.342977] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77732|264396|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:50:52.474188] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = semiloreblessing7@gmail.com
+cart_login_id = '125' (only when required)
+output = OK
+"77732" "Blessing  Semilore" "semiloreblessing7@gmail.com" "" "07-12-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:50:52.595199] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77732|264048|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:58:53.433516] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = oyerindeenoch@gmail.com
+cart_login_id = '63' (only when required)
+output = OK
+"77731" "Enoch Oyerinde" "oyerindeenoch@gmail.com" "" "07-11-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:58:54.530781] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77731|264396|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:58:56.755405] ####################################
+##################################################################
+action = check4_existing_cust_by_email
+parameters = oyerindeenoch@gmail.com
+cart_login_id = '63' (only when required)
+output = OK
+"77731" "Enoch Oyerinde" "oyerindeenoch@gmail.com" "" "07-11-2021" "never" "1" "false" "false" "264048,264396," ""
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+
+[12-Jul-2021 01:58:57.658550] ####################################
+##################################################################
+action = grant_file_access
+parameters = 77731|264048|unlimited||
+cart_login_id = '' (only when required)
+output = OK
+
+Peak memory usage: 4 MB
+##################################################################
+##################################################################
+
+

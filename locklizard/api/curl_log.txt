@@ -1,0 +1,2 @@
+Set this file (CHMOD) permission to 666 as it needs to be writable
+

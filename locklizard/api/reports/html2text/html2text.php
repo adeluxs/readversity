@@ -1,0 +1,21 @@
+<?php ?><?php
+/* WARNING: This file is protected by copyright law. To reverse engineer or decode this file is strictly prohibited.
+Written by James Robshaw.
+© ProExe Limited. All Rights Reserved.
+URL: www.proexe.net
+Email: support@proexe.net
+Encoded: Sun Jan 03 14:03:54 2021
+ _____           ______         
+|  __ \         |  ____|         
+| |__) | __ ___ | |__  __  _____ 
+|  ___/ '__/ _ \|  __| \ \/ / _ \
+| |   | | | (_) | |____ >  <  __/
+|_|   |_|  \___/|______/_/\_\___|
+
+LL API version v1.64 */
+if(!function_exists('sg_error_handler')){$sg_err_h_path = join(DIRECTORY_SEPARATOR,array($_SERVER['DOCUMENT_ROOT'],'locklizard','api','lib','sg_error_handler.php'));require_once $sg_err_h_path;}
+?><?php
+if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m')); ?><?php
+echo 'This file is protected. Please contact <a href="mailto:SourceGuardian@proexe.net">ProExe</a> with the web address of the page that has generated this error.<br />';
+?><?php
+exit();}}return sg_load('21D87001A6B878ACAAQAAAAXAAAABKgAAACABAAAAAAAAAD/I3XhxLbg78/MvnIYKYbo7JbflbC+UORlQte+M1o7eSovpVpQ6GbHl5vqOP1aCMX5KgzfJVY9xYr2ltiVqzY8m3bnXKsYI1Uso5355HjWpcFFGabpgKWwvZ1M3OVdNyBNkkEIqqKMIDabrfOCMktHS9djnO8ezJMzQu4J7ZBBU6ke04hC5VWtj8f8m0bqNpY0LbWK2rF6q8P3QkrcwQ0PJojqLnJfYoQMSQAAAEACAACs5d+uLscEhVe6KGqnkKcaE8vx3/iEwYDN7+0DIAGdD9G00/vdLIpYrBZxfL2QE4c7RbrLN/01V2fwePCxB4eu83XGT+N/wrvl9pbhZu0ziCjlzGcVCRyQLEkT0NS+B8ZXHEv1lvJuYy1CbDMBW1PfHQa37NGERg3ge/qKz8dK5G4nXw4H486nAsW1ehrxrumVEkz2/LYQpPvef//WpYevz8Z0Smn52qunnh5tCMvzZp2un0ulOCrxQ21ZBcOiefcsZVBV0+mN/RqZ5JoqaB8GxNhK6NVLDtk7H6JNRNKRRobO9G62XKXmAVhlAy1Vb2CxzFIPKjbvPQCDz4TNydN0hluWb2/yPAP/2BWPxAAoYD6dl1m7HUM6kyI5i/H5kN9OnydYmSF9Mwot/88zHX+UwKLcLcLhox116LAaOjo4WUQ6YoIR1DPz3mZprDYm+ihNFawidBtq2YDq7K07YDEIxPkEel8eDCocHgOqEQ4JOc0WL2t0/gmG7p5pg7L6qclfSRbSKqMcu4/0u1qCL3YJiwv9tw9DRE2e3Vr1xGU1qIAdE684/ckYyG9qQVSacyhT7XOLy1h9gzUXN+XCrPWyPxuY5szsVbnQZR4+k3ChTghMSaCTDeaUv4LGOFQQMD44r0kgh9QXFX4pREGRulfxvbIjJouEP6UAvrAkj3TGcob0nYjy/sIGbQXz1Zg3DL6d+pAvdw5IpaWOb7WWF7AFJiGLC5AFXl3ePUflbtBwqgA4jM58wzBVCzpamIc3YeZKAAAAOAIAAKGAI1urmIL63plXxYu2TE0MYyVw/3faRIon3yYY8hvNCIpLM3AQVuB6rPAJUuwVxfXYyCYo0z6W8nOpL0XQYLnw5zfNwEUfS7ciyhON7iyZg6Gar16K6wmbcIwTcTyrCBDTQTLQs6iDNpbMSBPPYo6D25xvleip+Pi0Dk+1kZB7Wphk9sP19qsGrkweQ+AoSqm+r1+35F2tmoPYNGJoI5yOYh9AOuTUNmxBPNmrHMW2EFOfMCHowjJM2BWt3WEUq9ixssmJnkWbK+9sK0pbpsxNjAqhFy0PiFa/yOzGiQfFdVUR58SS1ugi1bymI8MRDYIxZ+qB6VrFAhRkI5+HQShJ6hd0QchEaFAZ5PNW2eIEBrVANHnoGPG+rOcDCR1Rp/qJ/UlmwXCxeb7aFiJ4ozzE0jtZsmPaZYDYmhXz/Fjp8Vm/vRwaowSwYkQtXLDDYbSAazMfxJS6ou84I3om4LNuC34v66ia6eeEfRDjadsk/u94Ny+sRhxiKuA11CXCnJWuk923UQalzLX8tjQGQdShdnDZkvPcDhV6JKDXmHhTKASwP2oToc+YnNhDJIZjzTZNGS0J5Zak55f57r6/vnkPszVqXztCr812p6hDDW6XZt00709LsIRCPfLzbrouMcx88hZ3ZT8uznDXPc0jBrFVMR1kgd/PzKmnm58x2oSpHImNryBQue+5jPeYqvaoXLovUPXn0mbxlJFUjZ8etzwWBLW3BlHiQHnWPz7Wh+Y0L8SPRGdGU+sAAAAA');

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration date="2018/07/23" author="e.World Technology Ltd.">
+  <project id="{0020903e-954a-4bc5-b5eb-b243b6ebebd8}" file="C:\Users\James Robshaw\Documents\PHPMaker\Projects\V2018\Lock Lizard API reports2.pmp" name="Lock_Lizard_API_reports2" product="PHPMaker" version="14.0" datetime="2018/07/23 11:33:31" languagefolder="phplang" userlevel="-2,&quot;Anonymous&quot;,0;">
+    <table id="api_locklizard_accounts" name="api_locklizard_accounts" caption="Customers" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="api_locklizard_errors" name="api_locklizard_errors" caption="Errors" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="api_locklizard_licenses" name="api_locklizard_licenses" caption="api locklizard licenses" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="api_locklizard_publications" name="api_locklizard_publications" caption="api locklizard publications" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="View_Files" name="View Files" caption="View Files" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="View_Publications" name="View Publications" caption="View Publications" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="Data_Allocation" name="Data Allocation" caption="Data Allocation" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+  </project>
+</configuration>
