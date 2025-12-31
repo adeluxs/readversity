@@ -1,0 +1,5490 @@
+2020-08-24 3:32:06 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: OC Customize Template
+
+FILE: admin/model/localisation/language.php
+CODE: return $language_id;
+LINE: 220
+
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 49
+CODE: $data['products'][] = array(
+LINE: 102
+
+FILE: catalog/controller/common/header.php
+CODE: return $this->load->view('common/header', $data);
+LINE: 110
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 42
+
+FILE: catalog/controller/product/category.php
+CODE: foreach ($results as $result) {
+LINE: 153
+LINE: 196
+CODE: $data['products'][] = array(
+LINE: 271
+CODE: 'product_id'  => $result['product_id'],
+LINE: 280
+
+FILE: catalog/controller/product/product.php
+CODE: $results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
+LINE: 393
+CODE: $data['products'][] = array(
+LINE: 472
+CODE: 'rating'      => $rating,
+LINE: 489
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 245
+
+FILE: catalog/controller/product/special.php
+CODE: $results = $this->model_catalog_product->getProductSpecials($filter_data);
+LINE: 96
+CODE: $data['products'][] = array(
+LINE: 173
+CODE: 'rating'      => $result['rating'],
+LINE: 190
+
+FILE: catalog/controller/product/search.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 206
+CODE: $data['products'][] = array(
+LINE: 282
+CODE: 'rating'      => $result['rating'],
+LINE: 299
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 169
+CODE: $data['products'][] = array(
+LINE: 245
+CODE: 'rating'      => $result['rating'],
+LINE: 262
+
+FILE: catalog/controller/account/account.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/address.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 35
+LINE: 67
+LINE: 115
+
+FILE: catalog/controller/account/affiliate.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 43
+
+FILE: catalog/controller/account/download.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/forgotten.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 52
+
+FILE: catalog/controller/account/logout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 27
+
+FILE: catalog/controller/account/newsletter.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/order.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/password.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/recurring.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/reset.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/account/return.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 234
+LINE: 516
+
+FILE: catalog/controller/account/reward.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/account/tracking.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 19
+
+FILE: catalog/controller/account/transaction.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/voucher.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 166
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+
+FILE: catalog/controller/affiliate/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 30
+
+FILE: catalog/controller/checkout/failure.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 75
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+
+FILE: catalog/controller/common/maintenance.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/error/not_found.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/extension/credit_card/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 99
+
+FILE: catalog/controller/extension/credit_card/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/extension/credit_card/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 17
+
+FILE: catalog/controller/extension/payment/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/amazon_login_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/klarna_checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 11
+
+FILE: catalog/controller/extension/payment/wechat_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 24
+
+FILE: catalog/controller/information/sitemap.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/information/contact.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 177
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 38
+LINE: 73
+LINE: 124
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 237
+LINE: 522
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 102
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+CODE: $data['breadcrumbs'] = array();
+LINE: 44
+CODE: $data['breadcrumbs'] = array();
+LINE: 81
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+CODE: $this->load->language('account/voucher');
+LINE: 8
+LINE: 167
+
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('design/layout');
+LINE: 8
+LINE: 21
+LINE: 56
+LINE: 91
+CODE: protected function getForm() {
+LINE: 261
+----------------------------------------------------------------
+MOD: OC Layered Navigation Ajax
+CODE: $category_info = $this->model_catalog_category->getCategory($category_id);
+LINE: 101
+CODE: 'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 173
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
+LINE: 320
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
+LINE: 326
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
+LINE: 332
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+LINE: 338
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+LINE: 344
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
+LINE: 351
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=ASC' . $url)
+LINE: 357
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=ASC' . $url)
+LINE: 364
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
+LINE: 370
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&limit=' . $value)
+LINE: 397
+CODE: $pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
+LINE: 423
+CODE: $data['limit'] = $limit;
+LINE: 446
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 474
+
+FILE: catalog/model/catalog/product.php
+CODE: if (!empty($data['filter_manufacturer_id'])) {
+LINE: 163
+LINE: 532
+----------------------------------------------------------------
+MOD: OC Search Category by Plaza Themes
+CODE: $data['search'] = $this->load->controller('common/search');
+LINE: 75
+----------------------------------------------------------------
+MOD: OC Theme Option
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 326
+
+FILE: admin/controller/catalog/product.php
+CODE: public function index() {
+LINE: 11
+CODE: $this->load->language('catalog/product');
+LINE: 16
+LINE: 30
+LINE: 86
+LINE: 142
+LINE: 200
+CODE: 'sort_order' => $product_image['sort_order']
+LINE: 1112
+
+FILE: admin/model/catalog/product.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+LINE: 74
+LINE: 221
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: <td class="text-right">{{ entry_sort_order }}</td>
+LINE: 998
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 1024
+CODE: function addImage() {
+LINE: 1596
+CODE: $('#images tbody').append(html);
+LINE: 1614
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+NOT FOUND - OPERATIONS ABORTED!
+CODE: return $this->load->view('common/header', $data);
+LINE: 126
+CODE: $this->response->setOutput($this->load->view('design/layout_form', $data));
+LINE: 413
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+CODE: $report = array();
+LINE: 804
+CODE: $this->load->language('common/column_left');
+LINE: 8
+
+FILE: admin/controller/extension/extension/module.php
+CODE: $this->model_setting_extension->install('module', $this->request->get['extension']);
+LINE: 177
+CODE: $this->model_setting_extension->uninstall('module', $this->request->get['extension']);
+LINE: 229
+
+FILE: system/library/cart/user.php
+CODE: $user_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "user WHERE user_id = '" . (int)$this->session->data['user_id'] . "' AND status = '1'");
+LINE: 30
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/account.php
+CODE: public function index() {
+LINE: 3
+
+FILE: admin/controller/startup/permission.php
+CODE: 'extension/openbay'
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->language('catalog/product');
+LINE: 19
+LINE: 36
+LINE: 95
+LINE: 154
+LINE: 215
+CODE: $data['cancel'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 621
+CODE: $product_info = $this->model_catalog_product->getProduct($this->request->get['product_id']);
+LINE: 628
+CODE: $data['tab_openbay']
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->model('catalog/recurring');
+LINE: 763
+CODE: <li><a href="#tab-design" data-toggle="tab">{{ tab_design }}</a></li>
+LINE: 42
+CODE: </form>
+LINE: 1161
+CODE: if (isset($data['product_attribute'])) {
+LINE: 33
+CODE: if (!empty($data['product_attribute'])) {
+LINE: 193
+CODE: if (isset($this->session->data['success'])) {
+LINE: 35
+
+FILE: catalog/view/theme/default/template/account/account.twig
+CODE: {% if success %}
+LINE: 12
+CODE: $data['recurring'] = $this->url->link('account/recurring', '', true);
+LINE: 28
+
+FILE: catalog/view/theme/default/template/extension/module/account.twig
+CODE: <a href="{{ newsletter }}" class="list-group-item">{{ text_newsletter }}</a>
+LINE: 13
+
+FILE: admin/controller/customer/customer.php
+CODE: $data['user_token'] = $this->session->data['user_token'];
+LINE: 415
+LINE: 555
+CODE: $this->load->language('customer/customer');
+LINE: 8
+LINE: 21
+LINE: 80
+LINE: 139
+LINE: 200
+LINE: 1210
+LINE: 1250
+LINE: 1272
+LINE: 1315
+LINE: 1337
+LINE: 1380
+LINE: 1402
+CODE: $this->model_customer_customer->addCustomer($this->request->post);
+LINE: 28
+CODE: $this->model_customer_customer->editCustomer($this->request->get['customer_id'], $this->request->post);
+LINE: 106
+CODE: $customer_info = $this->model_customer_customer->getCustomer($this->request->get['customer_id']);
+LINE: 739
+CODE: protected function validateForm() {
+LINE: 1036
+CODE: if (isset($this->request->post['customer_group_id'])) {
+LINE: 769
+CODE: if (isset($this->error['address'])) {
+LINE: 680
+
+FILE: admin/view/template/customer/customer_form.twig
+CODE: <label class="col-sm-2 control-label" for="input-safe">{{ entry_safe }}</label>
+LINE: 288
+CODE: <button type="submit" form="form-customer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+LINE: 5
+CODE: {% if error_warning %}
+LINE: 23
+CODE: {{ footer }
+LINE: 1509
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrder($data) {
+LINE: 12
+CODE: public function editOrder($order_id, $data) {
+LINE: 66
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_option WHERE order_id = '" . (int)$order_id . "'");
+LINE: 77
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_voucher WHERE order_id = '" . (int)$order_id . "'");
+LINE: 101
+CODE: public function addOrder($data) {
+LINE: 41
+CODE: $order_product_id = $this->db->getLastId();
+LINE: 99
+LINE: 199
+CODE: if (isset($data['vouchers'])) {
+LINE: 175
+LINE: 346
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 723
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "order` WHERE order_id = '" . (int)$order_id . "'");
+LINE: 379
+
+FILE: catalog/controller/mail/register.php
+CODE: if (in_array('account', (array)$this->config->get('config_mail_alert'))) {
+LINE: 110
+CODE: index(&$route, &$args, &$output) {
+LINE: 52
+CODE: $this->load->language('account/register');
+LINE: 12
+CODE: if (isset($this->error['warning'])) {
+LINE: 76
+CODE: $customer_id = $this->model_account_customer->addCustomer($this->request->post);
+LINE: 38
+CODE: private function validate() {
+LINE: 275
+CODE: if (isset($this->error['confirm'])) {
+LINE: 141
+
+FILE: catalog/view/theme/default/template/account/register.twig
+CODE: {{ captcha }}
+LINE: 305
+CODE: $captcha;
+NOT FOUND - OPERATION SKIPPED!
+CODE: {{ column_left }}
+LINE: 15
+
+FILE: system/library/cart/cart.php
+CODE: public function getSubTotal() {
+LINE: 321
+
+FILE: system/library/cart/customer.php
+CODE: class Customer {
+LINE: 25
+CODE: public function getRewardPoints() {
+LINE: 159
+CODE: $this->load->language('product/product');
+LINE: 11
+LINE: 608
+LINE: 653
+LINE: 699
+CODE: $product_id = (int)$this->request->get['product_id'];
+LINE: 186
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: {% if reward %}
+LINE: 154
+
+FILE: catalog/view/theme/tt_koparion1/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion2/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion3/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion4/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion5/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion6/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 28
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 83
+CODE: $data['action'] = $this->url->link('checkout/cart/edit', '', true);
+LINE: 57
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if ($url[0] == 'category_id') {
+LINE: 31
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 47
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'simple_blog_article_id' && $url[0] != 'simple_blog_category_id' && $url[0] != 'simple_blog_author_id') {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->request->get['route'] = 'information/information';
+LINE: 66
+CODE: } elseif ($key == 'path') {
+LINE: 95
+CODE: $data['menu']
+LINE: 94
+
+FILE: catalog/view/theme/default/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+LINE: 59
+CODE: </head>
+LINE: 51
+
+FILE: catalog/view/theme/tt_koparion1/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion2/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion3/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion4/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion5/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion6/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/default/template/common/footer.twig
+CODE: </body>
+LINE: 61
+
+FILE: catalog/view/theme/tt_koparion1/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion2/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion3/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion4/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion5/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion6/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ history.comment }}</td>
+LINE: 149
+CODE: <td class="text-left">{{ column_comment }}</td>
+LINE: 139
+CODE: <td class="text-left">{{ column_date_added }}</td>
+LINE: 137
+CODE: <td class="text-left">{{ history.date_added }}</td>
+LINE: 161
+
+FILE: catalog/view/theme/default/template/account/order_list.twig
+CODE: <td class="text-left">{{ order.status }}</td>
+LINE: 37
+
+FILE: admin/controller/sale/order.php
+CODE: foreach ($orders as $order_id) {
+LINE: 1497
+LINE: 1713
+CODE: $total_data = array();
+LINE: 1818
+CODE: public function shipping() {
+LINE: 1859
+CODE: $data['histories'][] = array(
+LINE: 324
+CODE: $data['continue'] = $this->url->link('account/order', '', true);
+LINE: 341
+CODE: $this->model_account_order->getOrderHistories($this->request->get['order_id']);
+LINE: 335
+CODE: 'name'       => $result['firstname'] . ' ' . $result['lastname'],
+LINE: 62
+
+FILE: catalog/model/account/order.php
+CODE: getOrderHistories
+LINE: 221
+
+FILE: catalog/controller/mail/order.php
+CODE: $emails = explode(',', $this->config->get('config_mail_alert_email'));
+LINE: 573
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 191
+CODE: public function index() {
+LINE: 3
+CODE: public function index() {
+LINE: 3
+CODE: $data['products'][] = array(
+LINE: 287
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 505
+----------------------------------------------------------------
+2020-08-25 19:36:52 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: OC Customize Template
+
+FILE: admin/model/localisation/language.php
+CODE: return $language_id;
+LINE: 220
+
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 49
+CODE: $data['products'][] = array(
+LINE: 102
+
+FILE: catalog/controller/common/header.php
+CODE: return $this->load->view('common/header', $data);
+LINE: 110
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 42
+
+FILE: catalog/controller/product/category.php
+CODE: foreach ($results as $result) {
+LINE: 153
+LINE: 196
+CODE: $data['products'][] = array(
+LINE: 271
+CODE: 'product_id'  => $result['product_id'],
+LINE: 280
+
+FILE: catalog/controller/product/product.php
+CODE: $results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
+LINE: 393
+CODE: $data['products'][] = array(
+LINE: 472
+CODE: 'rating'      => $rating,
+LINE: 489
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 245
+
+FILE: catalog/controller/product/special.php
+CODE: $results = $this->model_catalog_product->getProductSpecials($filter_data);
+LINE: 96
+CODE: $data['products'][] = array(
+LINE: 173
+CODE: 'rating'      => $result['rating'],
+LINE: 190
+
+FILE: catalog/controller/product/search.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 206
+CODE: $data['products'][] = array(
+LINE: 282
+CODE: 'rating'      => $result['rating'],
+LINE: 299
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 169
+CODE: $data['products'][] = array(
+LINE: 245
+CODE: 'rating'      => $result['rating'],
+LINE: 262
+
+FILE: catalog/controller/account/account.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/address.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 35
+LINE: 67
+LINE: 115
+
+FILE: catalog/controller/account/affiliate.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 43
+
+FILE: catalog/controller/account/download.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/forgotten.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 52
+
+FILE: catalog/controller/account/logout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 27
+
+FILE: catalog/controller/account/newsletter.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/order.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/password.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/recurring.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/reset.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/account/return.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 234
+LINE: 516
+
+FILE: catalog/controller/account/reward.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/account/tracking.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 19
+
+FILE: catalog/controller/account/transaction.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/voucher.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 166
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+
+FILE: catalog/controller/affiliate/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 30
+
+FILE: catalog/controller/checkout/failure.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 75
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+
+FILE: catalog/controller/common/maintenance.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/error/not_found.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/extension/credit_card/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 99
+
+FILE: catalog/controller/extension/credit_card/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/extension/credit_card/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 17
+
+FILE: catalog/controller/extension/payment/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/amazon_login_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/klarna_checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 11
+
+FILE: catalog/controller/extension/payment/wechat_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 24
+
+FILE: catalog/controller/information/sitemap.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/information/contact.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 177
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 38
+LINE: 73
+LINE: 124
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 237
+LINE: 522
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 102
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+CODE: $data['breadcrumbs'] = array();
+LINE: 44
+CODE: $data['breadcrumbs'] = array();
+LINE: 81
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+CODE: $this->load->language('account/voucher');
+LINE: 8
+LINE: 167
+
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('design/layout');
+LINE: 8
+LINE: 21
+LINE: 56
+LINE: 91
+CODE: protected function getForm() {
+LINE: 261
+----------------------------------------------------------------
+MOD: OC Layered Navigation Ajax
+CODE: $category_info = $this->model_catalog_category->getCategory($category_id);
+LINE: 101
+CODE: 'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 173
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
+LINE: 320
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
+LINE: 326
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
+LINE: 332
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+LINE: 338
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+LINE: 344
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
+LINE: 351
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=ASC' . $url)
+LINE: 357
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=ASC' . $url)
+LINE: 364
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
+LINE: 370
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&limit=' . $value)
+LINE: 397
+CODE: $pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
+LINE: 423
+CODE: $data['limit'] = $limit;
+LINE: 446
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 474
+
+FILE: catalog/model/catalog/product.php
+CODE: if (!empty($data['filter_manufacturer_id'])) {
+LINE: 163
+LINE: 532
+----------------------------------------------------------------
+MOD: OC Search Category by Plaza Themes
+CODE: $data['search'] = $this->load->controller('common/search');
+LINE: 75
+----------------------------------------------------------------
+MOD: OC Theme Option
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 326
+
+FILE: admin/controller/catalog/product.php
+CODE: public function index() {
+LINE: 11
+CODE: $this->load->language('catalog/product');
+LINE: 16
+LINE: 30
+LINE: 86
+LINE: 142
+LINE: 200
+CODE: 'sort_order' => $product_image['sort_order']
+LINE: 1112
+
+FILE: admin/model/catalog/product.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+LINE: 74
+LINE: 221
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: <td class="text-right">{{ entry_sort_order }}</td>
+LINE: 998
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 1024
+CODE: function addImage() {
+LINE: 1596
+CODE: $('#images tbody').append(html);
+LINE: 1614
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+NOT FOUND - OPERATIONS ABORTED!
+CODE: return $this->load->view('common/header', $data);
+LINE: 126
+CODE: $this->response->setOutput($this->load->view('design/layout_form', $data));
+LINE: 413
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+CODE: $report = array();
+LINE: 804
+CODE: $this->load->language('common/column_left');
+LINE: 8
+
+FILE: admin/controller/extension/extension/module.php
+CODE: $this->model_setting_extension->install('module', $this->request->get['extension']);
+LINE: 177
+CODE: $this->model_setting_extension->uninstall('module', $this->request->get['extension']);
+LINE: 229
+
+FILE: system/library/cart/user.php
+CODE: $user_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "user WHERE user_id = '" . (int)$this->session->data['user_id'] . "' AND status = '1'");
+LINE: 30
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/account.php
+CODE: public function index() {
+LINE: 3
+
+FILE: admin/controller/startup/permission.php
+CODE: 'extension/openbay'
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->language('catalog/product');
+LINE: 19
+LINE: 36
+LINE: 95
+LINE: 154
+LINE: 215
+CODE: $data['cancel'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 621
+CODE: $product_info = $this->model_catalog_product->getProduct($this->request->get['product_id']);
+LINE: 628
+CODE: $data['tab_openbay']
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->model('catalog/recurring');
+LINE: 763
+CODE: <li><a href="#tab-design" data-toggle="tab">{{ tab_design }}</a></li>
+LINE: 42
+CODE: </form>
+LINE: 1161
+CODE: if (isset($data['product_attribute'])) {
+LINE: 33
+CODE: if (!empty($data['product_attribute'])) {
+LINE: 193
+CODE: if (isset($this->session->data['success'])) {
+LINE: 35
+
+FILE: catalog/view/theme/default/template/account/account.twig
+CODE: {% if success %}
+LINE: 12
+CODE: $data['recurring'] = $this->url->link('account/recurring', '', true);
+LINE: 28
+
+FILE: catalog/view/theme/default/template/extension/module/account.twig
+CODE: <a href="{{ newsletter }}" class="list-group-item">{{ text_newsletter }}</a>
+LINE: 13
+
+FILE: admin/controller/customer/customer.php
+CODE: $data['user_token'] = $this->session->data['user_token'];
+LINE: 415
+LINE: 555
+CODE: $this->load->language('customer/customer');
+LINE: 8
+LINE: 21
+LINE: 80
+LINE: 139
+LINE: 200
+LINE: 1210
+LINE: 1250
+LINE: 1272
+LINE: 1315
+LINE: 1337
+LINE: 1380
+LINE: 1402
+CODE: $this->model_customer_customer->addCustomer($this->request->post);
+LINE: 28
+CODE: $this->model_customer_customer->editCustomer($this->request->get['customer_id'], $this->request->post);
+LINE: 106
+CODE: $customer_info = $this->model_customer_customer->getCustomer($this->request->get['customer_id']);
+LINE: 739
+CODE: protected function validateForm() {
+LINE: 1036
+CODE: if (isset($this->request->post['customer_group_id'])) {
+LINE: 769
+CODE: if (isset($this->error['address'])) {
+LINE: 680
+
+FILE: admin/view/template/customer/customer_form.twig
+CODE: <label class="col-sm-2 control-label" for="input-safe">{{ entry_safe }}</label>
+LINE: 288
+CODE: <button type="submit" form="form-customer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+LINE: 5
+CODE: {% if error_warning %}
+LINE: 23
+CODE: {{ footer }
+LINE: 1509
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrder($data) {
+LINE: 12
+CODE: public function editOrder($order_id, $data) {
+LINE: 66
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_option WHERE order_id = '" . (int)$order_id . "'");
+LINE: 77
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_voucher WHERE order_id = '" . (int)$order_id . "'");
+LINE: 101
+CODE: public function addOrder($data) {
+LINE: 41
+CODE: $order_product_id = $this->db->getLastId();
+LINE: 99
+LINE: 199
+CODE: if (isset($data['vouchers'])) {
+LINE: 175
+LINE: 346
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 723
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "order` WHERE order_id = '" . (int)$order_id . "'");
+LINE: 379
+
+FILE: catalog/controller/mail/register.php
+CODE: if (in_array('account', (array)$this->config->get('config_mail_alert'))) {
+LINE: 110
+CODE: index(&$route, &$args, &$output) {
+LINE: 52
+CODE: $this->load->language('account/register');
+LINE: 12
+CODE: if (isset($this->error['warning'])) {
+LINE: 76
+CODE: $customer_id = $this->model_account_customer->addCustomer($this->request->post);
+LINE: 38
+CODE: private function validate() {
+LINE: 275
+CODE: if (isset($this->error['confirm'])) {
+LINE: 141
+
+FILE: catalog/view/theme/default/template/account/register.twig
+CODE: {{ captcha }}
+LINE: 305
+CODE: $captcha;
+NOT FOUND - OPERATION SKIPPED!
+CODE: {{ column_left }}
+LINE: 15
+
+FILE: system/library/cart/cart.php
+CODE: public function getSubTotal() {
+LINE: 321
+
+FILE: system/library/cart/customer.php
+CODE: class Customer {
+LINE: 25
+CODE: public function getRewardPoints() {
+LINE: 159
+CODE: $this->load->language('product/product');
+LINE: 11
+LINE: 608
+LINE: 653
+LINE: 699
+CODE: $product_id = (int)$this->request->get['product_id'];
+LINE: 186
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: {% if reward %}
+LINE: 154
+
+FILE: catalog/view/theme/tt_koparion1/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion2/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion3/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion4/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion5/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion6/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 28
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 83
+CODE: $data['action'] = $this->url->link('checkout/cart/edit', '', true);
+LINE: 57
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if ($url[0] == 'category_id') {
+LINE: 31
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 47
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'simple_blog_article_id' && $url[0] != 'simple_blog_category_id' && $url[0] != 'simple_blog_author_id') {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->request->get['route'] = 'information/information';
+LINE: 66
+CODE: } elseif ($key == 'path') {
+LINE: 95
+CODE: $data['menu']
+LINE: 94
+
+FILE: catalog/view/theme/default/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+LINE: 59
+CODE: </head>
+LINE: 51
+
+FILE: catalog/view/theme/tt_koparion1/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion2/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion3/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion4/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion5/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion6/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/default/template/common/footer.twig
+CODE: </body>
+LINE: 61
+
+FILE: catalog/view/theme/tt_koparion1/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion2/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion3/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion4/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion5/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion6/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ history.comment }}</td>
+LINE: 149
+CODE: <td class="text-left">{{ column_comment }}</td>
+LINE: 139
+CODE: <td class="text-left">{{ column_date_added }}</td>
+LINE: 137
+CODE: <td class="text-left">{{ history.date_added }}</td>
+LINE: 161
+
+FILE: catalog/view/theme/default/template/account/order_list.twig
+CODE: <td class="text-left">{{ order.status }}</td>
+LINE: 37
+
+FILE: admin/controller/sale/order.php
+CODE: foreach ($orders as $order_id) {
+LINE: 1497
+LINE: 1713
+CODE: $total_data = array();
+LINE: 1818
+CODE: public function shipping() {
+LINE: 1859
+CODE: $data['histories'][] = array(
+LINE: 324
+CODE: $data['continue'] = $this->url->link('account/order', '', true);
+LINE: 341
+CODE: $this->model_account_order->getOrderHistories($this->request->get['order_id']);
+LINE: 335
+CODE: 'name'       => $result['firstname'] . ' ' . $result['lastname'],
+LINE: 62
+
+FILE: catalog/model/account/order.php
+CODE: getOrderHistories
+LINE: 221
+
+FILE: catalog/controller/mail/order.php
+CODE: $emails = explode(',', $this->config->get('config_mail_alert_email'));
+LINE: 573
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 191
+CODE: public function index() {
+LINE: 3
+CODE: public function index() {
+LINE: 3
+CODE: $data['products'][] = array(
+LINE: 287
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 505
+----------------------------------------------------------------
+MOD: Remove Opencart Branding OC3x
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';
+LINE: 16
+
+FILE: admin/view/template/common/header.twig
+CODE: <div id="header-logo" class="navbar-header"><a href="{{ home }}" class="navbar-brand"><img src="view/image/logo.png" alt="{{ heading_title }}" title="{{ heading_title }}" /></a></div>
+LINE: 39
+CODE: <li class="dropdown-header">{{ text_help }}</li>
+LINE: 55
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }}</a></li>
+LINE: 58
+
+FILE: admin/view/template/common/footer.twig
+CODE: <footer id="footer">{{ text_footer }}<br />{{ text_version }}</footer></div>
+LINE: 0
+----------------------------------------------------------------
+2020-08-25 19:50:15 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: Admin Login
+
+FILE: admin/controller/common/login.php
+CODE: $this->response->setOutput($this->load->view('common/login', $data));
+LINE: 81
+----------------------------------------------------------------
+MOD: OC Customize Template
+
+FILE: admin/model/localisation/language.php
+CODE: return $language_id;
+LINE: 220
+
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 49
+CODE: $data['products'][] = array(
+LINE: 102
+
+FILE: catalog/controller/common/header.php
+CODE: return $this->load->view('common/header', $data);
+LINE: 110
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 42
+
+FILE: catalog/controller/product/category.php
+CODE: foreach ($results as $result) {
+LINE: 153
+LINE: 196
+CODE: $data['products'][] = array(
+LINE: 271
+CODE: 'product_id'  => $result['product_id'],
+LINE: 280
+
+FILE: catalog/controller/product/product.php
+CODE: $results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
+LINE: 393
+CODE: $data['products'][] = array(
+LINE: 472
+CODE: 'rating'      => $rating,
+LINE: 489
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 245
+
+FILE: catalog/controller/product/special.php
+CODE: $results = $this->model_catalog_product->getProductSpecials($filter_data);
+LINE: 96
+CODE: $data['products'][] = array(
+LINE: 173
+CODE: 'rating'      => $result['rating'],
+LINE: 190
+
+FILE: catalog/controller/product/search.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 206
+CODE: $data['products'][] = array(
+LINE: 282
+CODE: 'rating'      => $result['rating'],
+LINE: 299
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 169
+CODE: $data['products'][] = array(
+LINE: 245
+CODE: 'rating'      => $result['rating'],
+LINE: 262
+
+FILE: catalog/controller/account/account.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/address.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 35
+LINE: 67
+LINE: 115
+
+FILE: catalog/controller/account/affiliate.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 43
+
+FILE: catalog/controller/account/download.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/forgotten.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 52
+
+FILE: catalog/controller/account/logout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 27
+
+FILE: catalog/controller/account/newsletter.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/order.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/password.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/recurring.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/reset.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/account/return.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 234
+LINE: 516
+
+FILE: catalog/controller/account/reward.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/account/tracking.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 19
+
+FILE: catalog/controller/account/transaction.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/voucher.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 166
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+
+FILE: catalog/controller/affiliate/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 30
+
+FILE: catalog/controller/checkout/failure.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 75
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+
+FILE: catalog/controller/common/maintenance.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/error/not_found.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/extension/credit_card/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 99
+
+FILE: catalog/controller/extension/credit_card/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/extension/credit_card/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 17
+
+FILE: catalog/controller/extension/payment/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/amazon_login_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/klarna_checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 11
+
+FILE: catalog/controller/extension/payment/wechat_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 24
+
+FILE: catalog/controller/information/sitemap.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/information/contact.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 177
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 38
+LINE: 73
+LINE: 124
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 237
+LINE: 522
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 102
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+CODE: $data['breadcrumbs'] = array();
+LINE: 44
+CODE: $data['breadcrumbs'] = array();
+LINE: 81
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+CODE: $this->load->language('account/voucher');
+LINE: 8
+LINE: 167
+
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('design/layout');
+LINE: 8
+LINE: 21
+LINE: 56
+LINE: 91
+CODE: protected function getForm() {
+LINE: 261
+----------------------------------------------------------------
+MOD: OC Layered Navigation Ajax
+CODE: $category_info = $this->model_catalog_category->getCategory($category_id);
+LINE: 101
+CODE: 'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 173
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
+LINE: 320
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
+LINE: 326
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
+LINE: 332
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+LINE: 338
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+LINE: 344
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
+LINE: 351
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=ASC' . $url)
+LINE: 357
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=ASC' . $url)
+LINE: 364
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
+LINE: 370
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&limit=' . $value)
+LINE: 397
+CODE: $pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
+LINE: 423
+CODE: $data['limit'] = $limit;
+LINE: 446
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 474
+
+FILE: catalog/model/catalog/product.php
+CODE: if (!empty($data['filter_manufacturer_id'])) {
+LINE: 163
+LINE: 532
+----------------------------------------------------------------
+MOD: OC Search Category by Plaza Themes
+CODE: $data['search'] = $this->load->controller('common/search');
+LINE: 75
+----------------------------------------------------------------
+MOD: OC Theme Option
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 326
+
+FILE: admin/controller/catalog/product.php
+CODE: public function index() {
+LINE: 11
+CODE: $this->load->language('catalog/product');
+LINE: 16
+LINE: 30
+LINE: 86
+LINE: 142
+LINE: 200
+CODE: 'sort_order' => $product_image['sort_order']
+LINE: 1112
+
+FILE: admin/model/catalog/product.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+LINE: 74
+LINE: 221
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: <td class="text-right">{{ entry_sort_order }}</td>
+LINE: 998
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 1024
+CODE: function addImage() {
+LINE: 1596
+CODE: $('#images tbody').append(html);
+LINE: 1614
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+NOT FOUND - OPERATIONS ABORTED!
+CODE: return $this->load->view('common/header', $data);
+LINE: 126
+CODE: $this->response->setOutput($this->load->view('design/layout_form', $data));
+LINE: 413
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+CODE: $report = array();
+LINE: 804
+CODE: $this->load->language('common/column_left');
+LINE: 8
+
+FILE: admin/controller/extension/extension/module.php
+CODE: $this->model_setting_extension->install('module', $this->request->get['extension']);
+LINE: 177
+CODE: $this->model_setting_extension->uninstall('module', $this->request->get['extension']);
+LINE: 229
+
+FILE: system/library/cart/user.php
+CODE: $user_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "user WHERE user_id = '" . (int)$this->session->data['user_id'] . "' AND status = '1'");
+LINE: 30
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/account.php
+CODE: public function index() {
+LINE: 3
+
+FILE: admin/controller/startup/permission.php
+CODE: 'extension/openbay'
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->language('catalog/product');
+LINE: 19
+LINE: 36
+LINE: 95
+LINE: 154
+LINE: 215
+CODE: $data['cancel'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 621
+CODE: $product_info = $this->model_catalog_product->getProduct($this->request->get['product_id']);
+LINE: 628
+CODE: $data['tab_openbay']
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->model('catalog/recurring');
+LINE: 763
+CODE: <li><a href="#tab-design" data-toggle="tab">{{ tab_design }}</a></li>
+LINE: 42
+CODE: </form>
+LINE: 1161
+CODE: if (isset($data['product_attribute'])) {
+LINE: 33
+CODE: if (!empty($data['product_attribute'])) {
+LINE: 193
+CODE: if (isset($this->session->data['success'])) {
+LINE: 35
+
+FILE: catalog/view/theme/default/template/account/account.twig
+CODE: {% if success %}
+LINE: 12
+CODE: $data['recurring'] = $this->url->link('account/recurring', '', true);
+LINE: 28
+
+FILE: catalog/view/theme/default/template/extension/module/account.twig
+CODE: <a href="{{ newsletter }}" class="list-group-item">{{ text_newsletter }}</a>
+LINE: 13
+
+FILE: admin/controller/customer/customer.php
+CODE: $data['user_token'] = $this->session->data['user_token'];
+LINE: 415
+LINE: 555
+CODE: $this->load->language('customer/customer');
+LINE: 8
+LINE: 21
+LINE: 80
+LINE: 139
+LINE: 200
+LINE: 1210
+LINE: 1250
+LINE: 1272
+LINE: 1315
+LINE: 1337
+LINE: 1380
+LINE: 1402
+CODE: $this->model_customer_customer->addCustomer($this->request->post);
+LINE: 28
+CODE: $this->model_customer_customer->editCustomer($this->request->get['customer_id'], $this->request->post);
+LINE: 106
+CODE: $customer_info = $this->model_customer_customer->getCustomer($this->request->get['customer_id']);
+LINE: 739
+CODE: protected function validateForm() {
+LINE: 1036
+CODE: if (isset($this->request->post['customer_group_id'])) {
+LINE: 769
+CODE: if (isset($this->error['address'])) {
+LINE: 680
+
+FILE: admin/view/template/customer/customer_form.twig
+CODE: <label class="col-sm-2 control-label" for="input-safe">{{ entry_safe }}</label>
+LINE: 288
+CODE: <button type="submit" form="form-customer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+LINE: 5
+CODE: {% if error_warning %}
+LINE: 23
+CODE: {{ footer }
+LINE: 1509
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrder($data) {
+LINE: 12
+CODE: public function editOrder($order_id, $data) {
+LINE: 66
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_option WHERE order_id = '" . (int)$order_id . "'");
+LINE: 77
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_voucher WHERE order_id = '" . (int)$order_id . "'");
+LINE: 101
+CODE: public function addOrder($data) {
+LINE: 41
+CODE: $order_product_id = $this->db->getLastId();
+LINE: 99
+LINE: 199
+CODE: if (isset($data['vouchers'])) {
+LINE: 175
+LINE: 346
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 723
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "order` WHERE order_id = '" . (int)$order_id . "'");
+LINE: 379
+
+FILE: catalog/controller/mail/register.php
+CODE: if (in_array('account', (array)$this->config->get('config_mail_alert'))) {
+LINE: 110
+CODE: index(&$route, &$args, &$output) {
+LINE: 52
+CODE: $this->load->language('account/register');
+LINE: 12
+CODE: if (isset($this->error['warning'])) {
+LINE: 76
+CODE: $customer_id = $this->model_account_customer->addCustomer($this->request->post);
+LINE: 38
+CODE: private function validate() {
+LINE: 275
+CODE: if (isset($this->error['confirm'])) {
+LINE: 141
+
+FILE: catalog/view/theme/default/template/account/register.twig
+CODE: {{ captcha }}
+LINE: 305
+CODE: $captcha;
+NOT FOUND - OPERATION SKIPPED!
+CODE: {{ column_left }}
+LINE: 15
+
+FILE: system/library/cart/cart.php
+CODE: public function getSubTotal() {
+LINE: 321
+
+FILE: system/library/cart/customer.php
+CODE: class Customer {
+LINE: 25
+CODE: public function getRewardPoints() {
+LINE: 159
+CODE: $this->load->language('product/product');
+LINE: 11
+LINE: 608
+LINE: 653
+LINE: 699
+CODE: $product_id = (int)$this->request->get['product_id'];
+LINE: 186
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: {% if reward %}
+LINE: 154
+
+FILE: catalog/view/theme/tt_koparion1/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion2/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion3/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion4/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion5/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion6/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 28
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 83
+CODE: $data['action'] = $this->url->link('checkout/cart/edit', '', true);
+LINE: 57
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if ($url[0] == 'category_id') {
+LINE: 31
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 47
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'simple_blog_article_id' && $url[0] != 'simple_blog_category_id' && $url[0] != 'simple_blog_author_id') {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->request->get['route'] = 'information/information';
+LINE: 66
+CODE: } elseif ($key == 'path') {
+LINE: 95
+CODE: $data['menu']
+LINE: 94
+
+FILE: catalog/view/theme/default/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+LINE: 59
+CODE: </head>
+LINE: 51
+
+FILE: catalog/view/theme/tt_koparion1/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion2/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion3/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion4/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion5/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion6/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/default/template/common/footer.twig
+CODE: </body>
+LINE: 61
+
+FILE: catalog/view/theme/tt_koparion1/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion2/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion3/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion4/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion5/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion6/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ history.comment }}</td>
+LINE: 149
+CODE: <td class="text-left">{{ column_comment }}</td>
+LINE: 139
+CODE: <td class="text-left">{{ column_date_added }}</td>
+LINE: 137
+CODE: <td class="text-left">{{ history.date_added }}</td>
+LINE: 161
+
+FILE: catalog/view/theme/default/template/account/order_list.twig
+CODE: <td class="text-left">{{ order.status }}</td>
+LINE: 37
+
+FILE: admin/controller/sale/order.php
+CODE: foreach ($orders as $order_id) {
+LINE: 1497
+LINE: 1713
+CODE: $total_data = array();
+LINE: 1818
+CODE: public function shipping() {
+LINE: 1859
+CODE: $data['histories'][] = array(
+LINE: 324
+CODE: $data['continue'] = $this->url->link('account/order', '', true);
+LINE: 341
+CODE: $this->model_account_order->getOrderHistories($this->request->get['order_id']);
+LINE: 335
+CODE: 'name'       => $result['firstname'] . ' ' . $result['lastname'],
+LINE: 62
+
+FILE: catalog/model/account/order.php
+CODE: getOrderHistories
+LINE: 221
+
+FILE: catalog/controller/mail/order.php
+CODE: $emails = explode(',', $this->config->get('config_mail_alert_email'));
+LINE: 573
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 191
+CODE: public function index() {
+LINE: 3
+CODE: public function index() {
+LINE: 3
+CODE: $data['products'][] = array(
+LINE: 287
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 505
+----------------------------------------------------------------
+MOD: Remove Opencart Branding OC3x
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';
+LINE: 16
+
+FILE: admin/view/template/common/header.twig
+CODE: <div id="header-logo" class="navbar-header"><a href="{{ home }}" class="navbar-brand"><img src="view/image/logo.png" alt="{{ heading_title }}" title="{{ heading_title }}" /></a></div>
+LINE: 39
+CODE: <li class="dropdown-header">{{ text_help }}</li>
+LINE: 55
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }}</a></li>
+LINE: 58
+
+FILE: admin/view/template/common/footer.twig
+CODE: <footer id="footer">{{ text_footer }}<br />{{ text_version }}</footer></div>
+LINE: 0
+----------------------------------------------------------------
+2020-08-25 20:01:06 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: Admin Login
+
+FILE: admin/controller/common/login.php
+CODE: $this->response->setOutput($this->load->view('common/login', $data));
+LINE: 81
+----------------------------------------------------------------
+MOD: OC Customize Template
+
+FILE: admin/model/localisation/language.php
+CODE: return $language_id;
+LINE: 220
+
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 49
+CODE: $data['products'][] = array(
+LINE: 102
+
+FILE: catalog/controller/common/header.php
+CODE: return $this->load->view('common/header', $data);
+LINE: 110
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 42
+
+FILE: catalog/controller/product/category.php
+CODE: foreach ($results as $result) {
+LINE: 153
+LINE: 196
+CODE: $data['products'][] = array(
+LINE: 271
+CODE: 'product_id'  => $result['product_id'],
+LINE: 280
+
+FILE: catalog/controller/product/product.php
+CODE: $results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
+LINE: 393
+CODE: $data['products'][] = array(
+LINE: 472
+CODE: 'rating'      => $rating,
+LINE: 489
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 245
+
+FILE: catalog/controller/product/special.php
+CODE: $results = $this->model_catalog_product->getProductSpecials($filter_data);
+LINE: 96
+CODE: $data['products'][] = array(
+LINE: 173
+CODE: 'rating'      => $result['rating'],
+LINE: 190
+
+FILE: catalog/controller/product/search.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 206
+CODE: $data['products'][] = array(
+LINE: 282
+CODE: 'rating'      => $result['rating'],
+LINE: 299
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 169
+CODE: $data['products'][] = array(
+LINE: 245
+CODE: 'rating'      => $result['rating'],
+LINE: 262
+
+FILE: catalog/controller/account/account.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/address.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 35
+LINE: 67
+LINE: 115
+
+FILE: catalog/controller/account/affiliate.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 43
+
+FILE: catalog/controller/account/download.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/forgotten.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 52
+
+FILE: catalog/controller/account/logout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 27
+
+FILE: catalog/controller/account/newsletter.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/order.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/password.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/recurring.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/reset.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/account/return.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 234
+LINE: 516
+
+FILE: catalog/controller/account/reward.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/account/tracking.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 19
+
+FILE: catalog/controller/account/transaction.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/voucher.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 166
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+
+FILE: catalog/controller/affiliate/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 30
+
+FILE: catalog/controller/checkout/failure.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 75
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+
+FILE: catalog/controller/common/maintenance.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/error/not_found.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/extension/credit_card/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 99
+
+FILE: catalog/controller/extension/credit_card/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/extension/credit_card/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 17
+
+FILE: catalog/controller/extension/payment/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/amazon_login_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/klarna_checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 11
+
+FILE: catalog/controller/extension/payment/wechat_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 24
+
+FILE: catalog/controller/information/sitemap.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/information/contact.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 177
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 38
+LINE: 73
+LINE: 124
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 237
+LINE: 522
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 102
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+CODE: $data['breadcrumbs'] = array();
+LINE: 44
+CODE: $data['breadcrumbs'] = array();
+LINE: 81
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+CODE: $this->load->language('account/voucher');
+LINE: 8
+LINE: 167
+
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('design/layout');
+LINE: 8
+LINE: 21
+LINE: 56
+LINE: 91
+CODE: protected function getForm() {
+LINE: 261
+----------------------------------------------------------------
+MOD: OC Layered Navigation Ajax
+CODE: $category_info = $this->model_catalog_category->getCategory($category_id);
+LINE: 101
+CODE: 'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 173
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
+LINE: 320
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
+LINE: 326
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
+LINE: 332
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+LINE: 338
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+LINE: 344
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
+LINE: 351
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=ASC' . $url)
+LINE: 357
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=ASC' . $url)
+LINE: 364
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
+LINE: 370
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&limit=' . $value)
+LINE: 397
+CODE: $pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
+LINE: 423
+CODE: $data['limit'] = $limit;
+LINE: 446
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 474
+
+FILE: catalog/model/catalog/product.php
+CODE: if (!empty($data['filter_manufacturer_id'])) {
+LINE: 163
+LINE: 532
+----------------------------------------------------------------
+MOD: OC Search Category by Plaza Themes
+CODE: $data['search'] = $this->load->controller('common/search');
+LINE: 75
+----------------------------------------------------------------
+MOD: OC Theme Option
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 326
+
+FILE: admin/controller/catalog/product.php
+CODE: public function index() {
+LINE: 11
+CODE: $this->load->language('catalog/product');
+LINE: 16
+LINE: 30
+LINE: 86
+LINE: 142
+LINE: 200
+CODE: 'sort_order' => $product_image['sort_order']
+LINE: 1112
+
+FILE: admin/model/catalog/product.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+LINE: 74
+LINE: 221
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: <td class="text-right">{{ entry_sort_order }}</td>
+LINE: 998
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 1024
+CODE: function addImage() {
+LINE: 1596
+CODE: $('#images tbody').append(html);
+LINE: 1614
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+NOT FOUND - OPERATIONS ABORTED!
+CODE: return $this->load->view('common/header', $data);
+LINE: 126
+CODE: $this->response->setOutput($this->load->view('design/layout_form', $data));
+LINE: 413
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+CODE: $report = array();
+LINE: 804
+CODE: $this->load->language('common/column_left');
+LINE: 8
+
+FILE: admin/controller/extension/extension/module.php
+CODE: $this->model_setting_extension->install('module', $this->request->get['extension']);
+LINE: 177
+CODE: $this->model_setting_extension->uninstall('module', $this->request->get['extension']);
+LINE: 229
+
+FILE: system/library/cart/user.php
+CODE: $user_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "user WHERE user_id = '" . (int)$this->session->data['user_id'] . "' AND status = '1'");
+LINE: 30
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/account.php
+CODE: public function index() {
+LINE: 3
+
+FILE: admin/controller/startup/permission.php
+CODE: 'extension/openbay'
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->language('catalog/product');
+LINE: 19
+LINE: 36
+LINE: 95
+LINE: 154
+LINE: 215
+CODE: $data['cancel'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 621
+CODE: $product_info = $this->model_catalog_product->getProduct($this->request->get['product_id']);
+LINE: 628
+CODE: $data['tab_openbay']
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->model('catalog/recurring');
+LINE: 763
+CODE: <li><a href="#tab-design" data-toggle="tab">{{ tab_design }}</a></li>
+LINE: 42
+CODE: </form>
+LINE: 1161
+CODE: if (isset($data['product_attribute'])) {
+LINE: 33
+CODE: if (!empty($data['product_attribute'])) {
+LINE: 193
+CODE: if (isset($this->session->data['success'])) {
+LINE: 35
+
+FILE: catalog/view/theme/default/template/account/account.twig
+CODE: {% if success %}
+LINE: 12
+CODE: $data['recurring'] = $this->url->link('account/recurring', '', true);
+LINE: 28
+
+FILE: catalog/view/theme/default/template/extension/module/account.twig
+CODE: <a href="{{ newsletter }}" class="list-group-item">{{ text_newsletter }}</a>
+LINE: 13
+
+FILE: admin/controller/customer/customer.php
+CODE: $data['user_token'] = $this->session->data['user_token'];
+LINE: 415
+LINE: 555
+CODE: $this->load->language('customer/customer');
+LINE: 8
+LINE: 21
+LINE: 80
+LINE: 139
+LINE: 200
+LINE: 1210
+LINE: 1250
+LINE: 1272
+LINE: 1315
+LINE: 1337
+LINE: 1380
+LINE: 1402
+CODE: $this->model_customer_customer->addCustomer($this->request->post);
+LINE: 28
+CODE: $this->model_customer_customer->editCustomer($this->request->get['customer_id'], $this->request->post);
+LINE: 106
+CODE: $customer_info = $this->model_customer_customer->getCustomer($this->request->get['customer_id']);
+LINE: 739
+CODE: protected function validateForm() {
+LINE: 1036
+CODE: if (isset($this->request->post['customer_group_id'])) {
+LINE: 769
+CODE: if (isset($this->error['address'])) {
+LINE: 680
+
+FILE: admin/view/template/customer/customer_form.twig
+CODE: <label class="col-sm-2 control-label" for="input-safe">{{ entry_safe }}</label>
+LINE: 288
+CODE: <button type="submit" form="form-customer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+LINE: 5
+CODE: {% if error_warning %}
+LINE: 23
+CODE: {{ footer }
+LINE: 1509
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrder($data) {
+LINE: 12
+CODE: public function editOrder($order_id, $data) {
+LINE: 66
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_option WHERE order_id = '" . (int)$order_id . "'");
+LINE: 77
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_voucher WHERE order_id = '" . (int)$order_id . "'");
+LINE: 101
+CODE: public function addOrder($data) {
+LINE: 41
+CODE: $order_product_id = $this->db->getLastId();
+LINE: 99
+LINE: 199
+CODE: if (isset($data['vouchers'])) {
+LINE: 175
+LINE: 346
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 723
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "order` WHERE order_id = '" . (int)$order_id . "'");
+LINE: 379
+
+FILE: catalog/controller/mail/register.php
+CODE: if (in_array('account', (array)$this->config->get('config_mail_alert'))) {
+LINE: 110
+CODE: index(&$route, &$args, &$output) {
+LINE: 52
+CODE: $this->load->language('account/register');
+LINE: 12
+CODE: if (isset($this->error['warning'])) {
+LINE: 76
+CODE: $customer_id = $this->model_account_customer->addCustomer($this->request->post);
+LINE: 38
+CODE: private function validate() {
+LINE: 275
+CODE: if (isset($this->error['confirm'])) {
+LINE: 141
+
+FILE: catalog/view/theme/default/template/account/register.twig
+CODE: {{ captcha }}
+LINE: 305
+CODE: $captcha;
+NOT FOUND - OPERATION SKIPPED!
+CODE: {{ column_left }}
+LINE: 15
+
+FILE: system/library/cart/cart.php
+CODE: public function getSubTotal() {
+LINE: 321
+
+FILE: system/library/cart/customer.php
+CODE: class Customer {
+LINE: 25
+CODE: public function getRewardPoints() {
+LINE: 159
+CODE: $this->load->language('product/product');
+LINE: 11
+LINE: 608
+LINE: 653
+LINE: 699
+CODE: $product_id = (int)$this->request->get['product_id'];
+LINE: 186
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: {% if reward %}
+LINE: 154
+
+FILE: catalog/view/theme/tt_koparion1/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion2/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion3/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion4/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion5/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion6/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 28
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 83
+CODE: $data['action'] = $this->url->link('checkout/cart/edit', '', true);
+LINE: 57
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if ($url[0] == 'category_id') {
+LINE: 31
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 47
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'simple_blog_article_id' && $url[0] != 'simple_blog_category_id' && $url[0] != 'simple_blog_author_id') {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->request->get['route'] = 'information/information';
+LINE: 66
+CODE: } elseif ($key == 'path') {
+LINE: 95
+CODE: $data['menu']
+LINE: 94
+
+FILE: catalog/view/theme/default/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+LINE: 59
+CODE: </head>
+LINE: 51
+
+FILE: catalog/view/theme/tt_koparion1/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion2/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion3/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion4/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion5/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion6/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/default/template/common/footer.twig
+CODE: </body>
+LINE: 61
+
+FILE: catalog/view/theme/tt_koparion1/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion2/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion3/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion4/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion5/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion6/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ history.comment }}</td>
+LINE: 149
+CODE: <td class="text-left">{{ column_comment }}</td>
+LINE: 139
+CODE: <td class="text-left">{{ column_date_added }}</td>
+LINE: 137
+CODE: <td class="text-left">{{ history.date_added }}</td>
+LINE: 161
+
+FILE: catalog/view/theme/default/template/account/order_list.twig
+CODE: <td class="text-left">{{ order.status }}</td>
+LINE: 37
+
+FILE: admin/controller/sale/order.php
+CODE: foreach ($orders as $order_id) {
+LINE: 1497
+LINE: 1713
+CODE: $total_data = array();
+LINE: 1818
+CODE: public function shipping() {
+LINE: 1859
+CODE: $data['histories'][] = array(
+LINE: 324
+CODE: $data['continue'] = $this->url->link('account/order', '', true);
+LINE: 341
+CODE: $this->model_account_order->getOrderHistories($this->request->get['order_id']);
+LINE: 335
+CODE: 'name'       => $result['firstname'] . ' ' . $result['lastname'],
+LINE: 62
+
+FILE: catalog/model/account/order.php
+CODE: getOrderHistories
+LINE: 221
+
+FILE: catalog/controller/mail/order.php
+CODE: $emails = explode(',', $this->config->get('config_mail_alert_email'));
+LINE: 573
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 191
+CODE: public function index() {
+LINE: 3
+CODE: public function index() {
+LINE: 3
+CODE: $data['products'][] = array(
+LINE: 287
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 505
+----------------------------------------------------------------
+MOD: Remove Opencart Branding OC3x
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';
+LINE: 16
+
+FILE: admin/view/template/common/header.twig
+CODE: <div id="header-logo" class="navbar-header"><a href="{{ home }}" class="navbar-brand"><img src="view/image/logo.png" alt="{{ heading_title }}" title="{{ heading_title }}" /></a></div>
+LINE: 39
+CODE: <li class="dropdown-header">{{ text_help }}</li>
+LINE: 55
+CODE: <li><a href="http://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> {{ text_support }}</a></li>
+LINE: 58
+
+FILE: admin/view/template/common/footer.twig
+CODE: <footer id="footer">{{ text_footer }}<br />{{ text_version }}</footer></div>
+LINE: 0
+----------------------------------------------------------------
+2020-10-26 20:51:25 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: Admin Login
+
+FILE: admin/controller/common/login.php
+CODE: $this->response->setOutput($this->load->view('common/login', $data));
+LINE: 81
+----------------------------------------------------------------
+MOD: OC Customize Template
+
+FILE: admin/model/localisation/language.php
+CODE: return $language_id;
+LINE: 220
+
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 49
+CODE: $data['products'][] = array(
+LINE: 102
+
+FILE: catalog/controller/common/header.php
+CODE: return $this->load->view('common/header', $data);
+LINE: 110
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 42
+
+FILE: catalog/controller/product/category.php
+CODE: foreach ($results as $result) {
+LINE: 153
+LINE: 196
+CODE: $data['products'][] = array(
+LINE: 271
+CODE: 'product_id'  => $result['product_id'],
+LINE: 280
+
+FILE: catalog/controller/product/product.php
+CODE: $results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
+LINE: 393
+CODE: $data['products'][] = array(
+LINE: 472
+CODE: 'rating'      => $rating,
+LINE: 489
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 245
+
+FILE: catalog/controller/product/special.php
+CODE: $results = $this->model_catalog_product->getProductSpecials($filter_data);
+LINE: 96
+CODE: $data['products'][] = array(
+LINE: 173
+CODE: 'rating'      => $result['rating'],
+LINE: 190
+
+FILE: catalog/controller/product/search.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 206
+CODE: $data['products'][] = array(
+LINE: 282
+CODE: 'rating'      => $result['rating'],
+LINE: 299
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 169
+CODE: $data['products'][] = array(
+LINE: 245
+CODE: 'rating'      => $result['rating'],
+LINE: 262
+
+FILE: catalog/controller/account/account.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/address.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 35
+LINE: 67
+LINE: 115
+
+FILE: catalog/controller/account/affiliate.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 43
+
+FILE: catalog/controller/account/download.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/forgotten.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 52
+
+FILE: catalog/controller/account/logout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 27
+
+FILE: catalog/controller/account/newsletter.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/order.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/password.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/recurring.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/reset.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/account/return.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 234
+LINE: 516
+
+FILE: catalog/controller/account/reward.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/account/tracking.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 19
+
+FILE: catalog/controller/account/transaction.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/voucher.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 166
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+
+FILE: catalog/controller/affiliate/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 30
+
+FILE: catalog/controller/checkout/failure.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 75
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+
+FILE: catalog/controller/common/maintenance.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/error/not_found.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/extension/credit_card/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 99
+
+FILE: catalog/controller/extension/credit_card/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/extension/credit_card/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 17
+
+FILE: catalog/controller/extension/payment/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/amazon_login_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/klarna_checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 11
+
+FILE: catalog/controller/extension/payment/wechat_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 24
+
+FILE: catalog/controller/information/sitemap.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/information/contact.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 177
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 38
+LINE: 73
+LINE: 124
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 237
+LINE: 522
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 102
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+CODE: $data['breadcrumbs'] = array();
+LINE: 44
+CODE: $data['breadcrumbs'] = array();
+LINE: 81
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+CODE: $this->load->language('account/voucher');
+LINE: 8
+LINE: 167
+
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('design/layout');
+LINE: 8
+LINE: 21
+LINE: 56
+LINE: 91
+CODE: protected function getForm() {
+LINE: 261
+----------------------------------------------------------------
+MOD: OC Layered Navigation Ajax
+CODE: $category_info = $this->model_catalog_category->getCategory($category_id);
+LINE: 101
+CODE: 'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 173
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
+LINE: 320
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
+LINE: 326
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
+LINE: 332
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+LINE: 338
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+LINE: 344
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
+LINE: 351
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=ASC' . $url)
+LINE: 357
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=ASC' . $url)
+LINE: 364
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
+LINE: 370
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&limit=' . $value)
+LINE: 397
+CODE: $pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
+LINE: 423
+CODE: $data['limit'] = $limit;
+LINE: 446
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 474
+
+FILE: catalog/model/catalog/product.php
+CODE: if (!empty($data['filter_manufacturer_id'])) {
+LINE: 163
+LINE: 532
+----------------------------------------------------------------
+MOD: OC Search Category by Plaza Themes
+CODE: $data['search'] = $this->load->controller('common/search');
+LINE: 75
+----------------------------------------------------------------
+MOD: OC Theme Option
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 326
+
+FILE: admin/controller/catalog/product.php
+CODE: public function index() {
+LINE: 11
+CODE: $this->load->language('catalog/product');
+LINE: 16
+LINE: 30
+LINE: 86
+LINE: 142
+LINE: 200
+CODE: 'sort_order' => $product_image['sort_order']
+LINE: 1112
+
+FILE: admin/model/catalog/product.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+LINE: 74
+LINE: 221
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: <td class="text-right">{{ entry_sort_order }}</td>
+LINE: 998
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 1024
+CODE: function addImage() {
+LINE: 1596
+CODE: $('#images tbody').append(html);
+LINE: 1614
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+NOT FOUND - OPERATIONS ABORTED!
+CODE: return $this->load->view('common/header', $data);
+LINE: 126
+CODE: $this->response->setOutput($this->load->view('design/layout_form', $data));
+LINE: 413
+----------------------------------------------------------------
+MOD: Opencart Twak
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+CODE: $report = array();
+LINE: 804
+CODE: $this->load->language('common/column_left');
+LINE: 8
+
+FILE: admin/controller/extension/extension/module.php
+CODE: $this->model_setting_extension->install('module', $this->request->get['extension']);
+LINE: 177
+CODE: $this->model_setting_extension->uninstall('module', $this->request->get['extension']);
+LINE: 229
+
+FILE: system/library/cart/user.php
+CODE: $user_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "user WHERE user_id = '" . (int)$this->session->data['user_id'] . "' AND status = '1'");
+LINE: 30
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/account.php
+CODE: public function index() {
+LINE: 3
+
+FILE: admin/controller/startup/permission.php
+CODE: 'extension/openbay'
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->language('catalog/product');
+LINE: 19
+LINE: 36
+LINE: 95
+LINE: 154
+LINE: 215
+CODE: $data['cancel'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 621
+CODE: $product_info = $this->model_catalog_product->getProduct($this->request->get['product_id']);
+LINE: 628
+CODE: $data['tab_openbay']
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->model('catalog/recurring');
+LINE: 763
+CODE: <li><a href="#tab-design" data-toggle="tab">{{ tab_design }}</a></li>
+LINE: 42
+CODE: </form>
+LINE: 1161
+CODE: if (isset($data['product_attribute'])) {
+LINE: 33
+CODE: if (!empty($data['product_attribute'])) {
+LINE: 193
+CODE: if (isset($this->session->data['success'])) {
+LINE: 35
+
+FILE: catalog/view/theme/default/template/account/account.twig
+CODE: {% if success %}
+LINE: 12
+CODE: $data['recurring'] = $this->url->link('account/recurring', '', true);
+LINE: 28
+
+FILE: catalog/view/theme/default/template/extension/module/account.twig
+CODE: <a href="{{ newsletter }}" class="list-group-item">{{ text_newsletter }}</a>
+LINE: 13
+
+FILE: admin/controller/customer/customer.php
+CODE: $data['user_token'] = $this->session->data['user_token'];
+LINE: 415
+LINE: 555
+CODE: $this->load->language('customer/customer');
+LINE: 8
+LINE: 21
+LINE: 80
+LINE: 139
+LINE: 200
+LINE: 1210
+LINE: 1250
+LINE: 1272
+LINE: 1315
+LINE: 1337
+LINE: 1380
+LINE: 1402
+CODE: $this->model_customer_customer->addCustomer($this->request->post);
+LINE: 28
+CODE: $this->model_customer_customer->editCustomer($this->request->get['customer_id'], $this->request->post);
+LINE: 106
+CODE: $customer_info = $this->model_customer_customer->getCustomer($this->request->get['customer_id']);
+LINE: 739
+CODE: protected function validateForm() {
+LINE: 1036
+CODE: if (isset($this->request->post['customer_group_id'])) {
+LINE: 769
+CODE: if (isset($this->error['address'])) {
+LINE: 680
+
+FILE: admin/view/template/customer/customer_form.twig
+CODE: <label class="col-sm-2 control-label" for="input-safe">{{ entry_safe }}</label>
+LINE: 288
+CODE: <button type="submit" form="form-customer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+LINE: 5
+CODE: {% if error_warning %}
+LINE: 23
+CODE: {{ footer }
+LINE: 1509
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrder($data) {
+LINE: 12
+CODE: public function editOrder($order_id, $data) {
+LINE: 66
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_option WHERE order_id = '" . (int)$order_id . "'");
+LINE: 77
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_voucher WHERE order_id = '" . (int)$order_id . "'");
+LINE: 101
+CODE: public function addOrder($data) {
+LINE: 41
+CODE: $order_product_id = $this->db->getLastId();
+LINE: 99
+LINE: 199
+CODE: if (isset($data['vouchers'])) {
+LINE: 175
+LINE: 346
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 723
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "order` WHERE order_id = '" . (int)$order_id . "'");
+LINE: 379
+
+FILE: catalog/controller/mail/register.php
+CODE: if (in_array('account', (array)$this->config->get('config_mail_alert'))) {
+LINE: 110
+CODE: index(&$route, &$args, &$output) {
+LINE: 52
+CODE: $this->load->language('account/register');
+LINE: 12
+CODE: if (isset($this->error['warning'])) {
+LINE: 76
+CODE: $customer_id = $this->model_account_customer->addCustomer($this->request->post);
+LINE: 38
+CODE: private function validate() {
+LINE: 275
+CODE: if (isset($this->error['confirm'])) {
+LINE: 141
+
+FILE: catalog/view/theme/default/template/account/register.twig
+CODE: {{ captcha }}
+LINE: 305
+CODE: $captcha;
+NOT FOUND - OPERATION SKIPPED!
+CODE: {{ column_left }}
+LINE: 15
+
+FILE: system/library/cart/cart.php
+CODE: public function getSubTotal() {
+LINE: 321
+
+FILE: system/library/cart/customer.php
+CODE: class Customer {
+LINE: 25
+CODE: public function getRewardPoints() {
+LINE: 159
+CODE: $this->load->language('product/product');
+LINE: 11
+LINE: 608
+LINE: 653
+LINE: 699
+CODE: $product_id = (int)$this->request->get['product_id'];
+LINE: 186
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: {% if reward %}
+LINE: 154
+
+FILE: catalog/view/theme/tt_koparion1/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion2/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion3/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion4/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion5/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion6/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 28
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 83
+CODE: $data['action'] = $this->url->link('checkout/cart/edit', '', true);
+LINE: 57
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if ($url[0] == 'category_id') {
+LINE: 31
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 47
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'simple_blog_article_id' && $url[0] != 'simple_blog_category_id' && $url[0] != 'simple_blog_author_id') {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->request->get['route'] = 'information/information';
+LINE: 66
+CODE: } elseif ($key == 'path') {
+LINE: 95
+CODE: $data['menu']
+LINE: 94
+
+FILE: catalog/view/theme/default/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+LINE: 59
+CODE: </head>
+LINE: 51
+
+FILE: catalog/view/theme/tt_koparion1/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion2/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion3/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion4/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion5/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion6/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/default/template/common/footer.twig
+CODE: </body>
+LINE: 61
+
+FILE: catalog/view/theme/tt_koparion1/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion2/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion3/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion4/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion5/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion6/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ history.comment }}</td>
+LINE: 149
+CODE: <td class="text-left">{{ column_comment }}</td>
+LINE: 139
+CODE: <td class="text-left">{{ column_date_added }}</td>
+LINE: 137
+CODE: <td class="text-left">{{ history.date_added }}</td>
+LINE: 161
+
+FILE: catalog/view/theme/default/template/account/order_list.twig
+CODE: <td class="text-left">{{ order.status }}</td>
+LINE: 37
+
+FILE: admin/controller/sale/order.php
+CODE: foreach ($orders as $order_id) {
+LINE: 1497
+LINE: 1713
+CODE: $total_data = array();
+LINE: 1818
+CODE: public function shipping() {
+LINE: 1859
+CODE: $data['histories'][] = array(
+LINE: 324
+CODE: $data['continue'] = $this->url->link('account/order', '', true);
+LINE: 341
+CODE: $this->model_account_order->getOrderHistories($this->request->get['order_id']);
+LINE: 335
+CODE: 'name'       => $result['firstname'] . ' ' . $result['lastname'],
+LINE: 62
+
+FILE: catalog/model/account/order.php
+CODE: getOrderHistories
+LINE: 221
+
+FILE: catalog/controller/mail/order.php
+CODE: $emails = explode(',', $this->config->get('config_mail_alert_email'));
+LINE: 573
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 191
+CODE: public function index() {
+LINE: 3
+CODE: public function index() {
+LINE: 3
+CODE: $data['products'][] = array(
+LINE: 287
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 505
+----------------------------------------------------------------
+MOD: Remove Opencart Branding OC3x
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';
+LINE: 16
+
+FILE: admin/view/template/common/header.twig
+CODE: <div id="header-logo" class="navbar-header"><a href="{{ home }}" class="navbar-brand"><img src="view/image/logo.png" alt="{{ heading_title }}" title="{{ heading_title }}" /></a></div>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: admin/view/template/common/footer.twig
+CODE: <footer id="footer">{{ text_footer }}<br />{{ text_version }}</footer></div>
+LINE: 0
+----------------------------------------------------------------
+2020-11-13 15:54:21 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: Admin Login
+
+FILE: admin/controller/common/login.php
+CODE: $this->response->setOutput($this->load->view('common/login', $data));
+LINE: 81
+----------------------------------------------------------------
+MOD: Markeaze
+
+FILE: catalog/controller/checkout/cart.php
+REGEX: /function(.*)[aA][dD]{2}(.*)\((.*)\)(.*)\{[\s\S]*?(if(.*)\((.*)\!\$json(.*)\)(.*)\{[\s\S]*?(?=\$json\['success'\]))/i
+LINE: 262
+REGEX: /function(.*)remove(.*)[\s\S]*?\$this->response->setOutput[\s\S]*?[\n\r]/i
+LINE: 413
+REGEX: /function(.*)edit(.*)[\s\S]*?reward[\s\S]*?[\n\r]/i
+LINE: 387
+
+FILE: catalog/controller/checkout/success.php
+REGEX: /\$this->load->language[\s\S]*?[\n\r]/i
+LINE: 4
+
+FILE: catalog/controller/product/product.php
+REGEX: /function(.*)index(.*)\((.*)\)(.*)\{/i
+LINE: 5
+----------------------------------------------------------------
+MOD: OC Customize Template
+
+FILE: admin/model/localisation/language.php
+CODE: return $language_id;
+LINE: 220
+
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 49
+CODE: $data['products'][] = array(
+LINE: 102
+
+FILE: catalog/controller/common/header.php
+CODE: return $this->load->view('common/header', $data);
+LINE: 110
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 42
+
+FILE: catalog/controller/product/category.php
+CODE: foreach ($results as $result) {
+LINE: 153
+LINE: 196
+CODE: $data['products'][] = array(
+LINE: 271
+CODE: 'product_id'  => $result['product_id'],
+LINE: 280
+CODE: $results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
+LINE: 397
+CODE: $data['products'][] = array(
+LINE: 476
+CODE: 'rating'      => $rating,
+LINE: 493
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 249
+
+FILE: catalog/controller/product/special.php
+CODE: $results = $this->model_catalog_product->getProductSpecials($filter_data);
+LINE: 96
+CODE: $data['products'][] = array(
+LINE: 173
+CODE: 'rating'      => $result['rating'],
+LINE: 190
+
+FILE: catalog/controller/product/search.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 206
+CODE: $data['products'][] = array(
+LINE: 282
+CODE: 'rating'      => $result['rating'],
+LINE: 299
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 169
+CODE: $data['products'][] = array(
+LINE: 245
+CODE: 'rating'      => $result['rating'],
+LINE: 262
+
+FILE: catalog/controller/account/account.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/address.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 35
+LINE: 67
+LINE: 115
+
+FILE: catalog/controller/account/affiliate.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 43
+
+FILE: catalog/controller/account/download.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/forgotten.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 52
+
+FILE: catalog/controller/account/logout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 27
+
+FILE: catalog/controller/account/newsletter.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/order.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/password.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/recurring.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/reset.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/account/return.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 234
+LINE: 516
+
+FILE: catalog/controller/account/reward.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/account/tracking.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 19
+
+FILE: catalog/controller/account/transaction.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/voucher.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 166
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+
+FILE: catalog/controller/affiliate/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 30
+
+FILE: catalog/controller/checkout/failure.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 75
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+
+FILE: catalog/controller/common/maintenance.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/error/not_found.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/extension/credit_card/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 99
+
+FILE: catalog/controller/extension/credit_card/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/extension/credit_card/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 17
+
+FILE: catalog/controller/extension/payment/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/amazon_login_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/klarna_checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 11
+
+FILE: catalog/controller/extension/payment/wechat_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 24
+
+FILE: catalog/controller/information/sitemap.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/information/contact.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 177
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 38
+LINE: 73
+LINE: 124
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 237
+LINE: 522
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 102
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+CODE: $data['breadcrumbs'] = array();
+LINE: 44
+CODE: $data['breadcrumbs'] = array();
+LINE: 81
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+CODE: $this->load->language('account/voucher');
+LINE: 8
+LINE: 167
+
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('design/layout');
+LINE: 8
+LINE: 21
+LINE: 56
+LINE: 91
+CODE: protected function getForm() {
+LINE: 261
+----------------------------------------------------------------
+MOD: OC Layered Navigation Ajax
+CODE: $category_info = $this->model_catalog_category->getCategory($category_id);
+LINE: 101
+CODE: 'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 173
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
+LINE: 320
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
+LINE: 326
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
+LINE: 332
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+LINE: 338
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+LINE: 344
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
+LINE: 351
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=ASC' . $url)
+LINE: 357
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=ASC' . $url)
+LINE: 364
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
+LINE: 370
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&limit=' . $value)
+LINE: 397
+CODE: $pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
+LINE: 423
+CODE: $data['limit'] = $limit;
+LINE: 446
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 474
+
+FILE: catalog/model/catalog/product.php
+CODE: if (!empty($data['filter_manufacturer_id'])) {
+LINE: 163
+LINE: 532
+----------------------------------------------------------------
+MOD: OC Search Category by Plaza Themes
+CODE: $data['search'] = $this->load->controller('common/search');
+LINE: 75
+----------------------------------------------------------------
+MOD: OC Theme Option
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 326
+
+FILE: admin/controller/catalog/product.php
+CODE: public function index() {
+LINE: 11
+CODE: $this->load->language('catalog/product');
+LINE: 16
+LINE: 30
+LINE: 86
+LINE: 142
+LINE: 200
+CODE: 'sort_order' => $product_image['sort_order']
+LINE: 1112
+
+FILE: admin/model/catalog/product.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+LINE: 74
+LINE: 221
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: <td class="text-right">{{ entry_sort_order }}</td>
+LINE: 998
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 1024
+CODE: function addImage() {
+LINE: 1596
+CODE: $('#images tbody').append(html);
+LINE: 1614
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+NOT FOUND - OPERATIONS ABORTED!
+CODE: return $this->load->view('common/header', $data);
+LINE: 126
+CODE: $this->response->setOutput($this->load->view('design/layout_form', $data));
+LINE: 413
+----------------------------------------------------------------
+MOD: Opencart Twak
+----------------------------------------------------------------
+MOD: Purpletree Multivendor for OpenCart 3.x
+CODE: $report = array();
+LINE: 804
+CODE: $this->load->language('common/column_left');
+LINE: 8
+
+FILE: admin/controller/extension/extension/module.php
+CODE: $this->model_setting_extension->install('module', $this->request->get['extension']);
+LINE: 177
+CODE: $this->model_setting_extension->uninstall('module', $this->request->get['extension']);
+LINE: 229
+
+FILE: system/library/cart/user.php
+CODE: $user_query = $this->db->query("SELECT * FROM " . DB_PREFIX . "user WHERE user_id = '" . (int)$this->session->data['user_id'] . "' AND status = '1'");
+LINE: 30
+CODE: public function index() {
+LINE: 10
+
+FILE: catalog/controller/extension/module/account.php
+CODE: public function index() {
+LINE: 3
+
+FILE: admin/controller/startup/permission.php
+CODE: 'extension/openbay'
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->language('catalog/product');
+LINE: 19
+LINE: 36
+LINE: 95
+LINE: 154
+LINE: 215
+CODE: $data['cancel'] = $this->url->link('catalog/product', 'user_token=' . $this->session->data['user_token'] . $url, true);
+LINE: 621
+CODE: $product_info = $this->model_catalog_product->getProduct($this->request->get['product_id']);
+LINE: 628
+CODE: $data['tab_openbay']
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->load->model('catalog/recurring');
+LINE: 763
+CODE: <li><a href="#tab-design" data-toggle="tab">{{ tab_design }}</a></li>
+LINE: 42
+CODE: </form>
+LINE: 1161
+CODE: if (isset($data['product_attribute'])) {
+LINE: 33
+CODE: if (!empty($data['product_attribute'])) {
+LINE: 193
+CODE: if (isset($this->session->data['success'])) {
+LINE: 35
+
+FILE: catalog/view/theme/default/template/account/account.twig
+CODE: {% if success %}
+LINE: 12
+CODE: $data['recurring'] = $this->url->link('account/recurring', '', true);
+LINE: 28
+
+FILE: catalog/view/theme/default/template/extension/module/account.twig
+CODE: <a href="{{ newsletter }}" class="list-group-item">{{ text_newsletter }}</a>
+LINE: 13
+
+FILE: admin/controller/customer/customer.php
+CODE: $data['user_token'] = $this->session->data['user_token'];
+LINE: 415
+LINE: 555
+CODE: $this->load->language('customer/customer');
+LINE: 8
+LINE: 21
+LINE: 80
+LINE: 139
+LINE: 200
+LINE: 1210
+LINE: 1250
+LINE: 1272
+LINE: 1315
+LINE: 1337
+LINE: 1380
+LINE: 1402
+CODE: $this->model_customer_customer->addCustomer($this->request->post);
+LINE: 28
+CODE: $this->model_customer_customer->editCustomer($this->request->get['customer_id'], $this->request->post);
+LINE: 106
+CODE: $customer_info = $this->model_customer_customer->getCustomer($this->request->get['customer_id']);
+LINE: 739
+CODE: protected function validateForm() {
+LINE: 1036
+CODE: if (isset($this->request->post['customer_group_id'])) {
+LINE: 769
+CODE: if (isset($this->error['address'])) {
+LINE: 680
+
+FILE: admin/view/template/customer/customer_form.twig
+CODE: <label class="col-sm-2 control-label" for="input-safe">{{ entry_safe }}</label>
+LINE: 288
+CODE: <button type="submit" form="form-customer" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+LINE: 5
+CODE: {% if error_warning %}
+LINE: 23
+CODE: {{ footer }
+LINE: 1509
+
+FILE: catalog/model/checkout/order.php
+CODE: public function addOrder($data) {
+LINE: 12
+CODE: public function editOrder($order_id, $data) {
+LINE: 66
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_option WHERE order_id = '" . (int)$order_id . "'");
+LINE: 77
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "order_voucher WHERE order_id = '" . (int)$order_id . "'");
+LINE: 101
+CODE: public function addOrder($data) {
+LINE: 41
+CODE: $order_product_id = $this->db->getLastId();
+LINE: 99
+LINE: 199
+CODE: if (isset($data['vouchers'])) {
+LINE: 175
+LINE: 346
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 723
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "order` WHERE order_id = '" . (int)$order_id . "'");
+LINE: 379
+
+FILE: catalog/controller/mail/register.php
+CODE: if (in_array('account', (array)$this->config->get('config_mail_alert'))) {
+LINE: 110
+CODE: index(&$route, &$args, &$output) {
+LINE: 52
+CODE: $this->load->language('account/register');
+LINE: 12
+CODE: if (isset($this->error['warning'])) {
+LINE: 76
+CODE: $customer_id = $this->model_account_customer->addCustomer($this->request->post);
+LINE: 38
+CODE: private function validate() {
+LINE: 275
+CODE: if (isset($this->error['confirm'])) {
+LINE: 141
+
+FILE: catalog/view/theme/default/template/account/register.twig
+CODE: {{ captcha }}
+LINE: 305
+CODE: $captcha;
+NOT FOUND - OPERATION SKIPPED!
+CODE: {{ column_left }}
+LINE: 15
+
+FILE: system/library/cart/cart.php
+CODE: public function getSubTotal() {
+LINE: 321
+
+FILE: system/library/cart/customer.php
+CODE: class Customer {
+LINE: 25
+CODE: public function getRewardPoints() {
+LINE: 159
+CODE: $this->load->language('product/product');
+LINE: 15
+LINE: 612
+LINE: 657
+LINE: 703
+CODE: $product_id = (int)$this->request->get['product_id'];
+LINE: 190
+
+FILE: catalog/view/theme/default/template/product/product.twig
+CODE: {% if reward %}
+LINE: 154
+
+FILE: catalog/view/theme/tt_koparion1/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion2/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion3/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion4/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion5/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+
+FILE: catalog/view/theme/tt_koparion6/template/product/product.twig
+CODE: {% if reward %}
+LINE: 144
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 28
+CODE: if ($product['minimum'] > $product_total) {
+LINE: 83
+CODE: $data['action'] = $this->url->link('checkout/cart/edit', '', true);
+LINE: 57
+
+FILE: catalog/controller/startup/seo_url.php
+CODE: if ($url[0] == 'category_id') {
+LINE: 31
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id') {
+LINE: 47
+CODE: if ($query->row['query'] && $url[0] != 'information_id' && $url[0] != 'manufacturer_id' && $url[0] != 'category_id' && $url[0] != 'product_id' && $url[0] != 'simple_blog_article_id' && $url[0] != 'simple_blog_category_id' && $url[0] != 'simple_blog_author_id') {
+NOT FOUND - OPERATION SKIPPED!
+CODE: $this->request->get['route'] = 'information/information';
+LINE: 66
+CODE: } elseif ($key == 'path') {
+LINE: 95
+CODE: $data['menu']
+LINE: 94
+
+FILE: catalog/view/theme/default/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+LINE: 59
+CODE: </head>
+LINE: 51
+
+FILE: catalog/view/theme/tt_koparion1/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion2/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion3/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion4/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion5/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/tt_koparion6/template/common/header.twig
+CODE: <base
+LINE: 22
+CODE: <ul class="list-inline">
+NOT FOUND - OPERATION SKIPPED!
+CODE: </head>
+LINE: 118
+
+FILE: catalog/view/theme/default/template/common/footer.twig
+CODE: </body>
+LINE: 61
+
+FILE: catalog/view/theme/tt_koparion1/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion2/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion3/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion4/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion5/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/tt_koparion6/template/common/footer.twig
+CODE: </body>
+LINE: 110
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ history.comment }}</td>
+LINE: 149
+CODE: <td class="text-left">{{ column_comment }}</td>
+LINE: 139
+CODE: <td class="text-left">{{ column_date_added }}</td>
+LINE: 137
+CODE: <td class="text-left">{{ history.date_added }}</td>
+LINE: 161
+
+FILE: catalog/view/theme/default/template/account/order_list.twig
+CODE: <td class="text-left">{{ order.status }}</td>
+LINE: 37
+
+FILE: admin/controller/sale/order.php
+CODE: foreach ($orders as $order_id) {
+LINE: 1497
+LINE: 1713
+CODE: $total_data = array();
+LINE: 1818
+CODE: public function shipping() {
+LINE: 1859
+CODE: $data['histories'][] = array(
+LINE: 324
+CODE: $data['continue'] = $this->url->link('account/order', '', true);
+LINE: 341
+CODE: $this->model_account_order->getOrderHistories($this->request->get['order_id']);
+LINE: 335
+CODE: 'name'       => $result['firstname'] . ' ' . $result['lastname'],
+LINE: 62
+
+FILE: catalog/model/account/order.php
+CODE: getOrderHistories
+LINE: 221
+
+FILE: catalog/controller/mail/order.php
+CODE: $emails = explode(',', $this->config->get('config_mail_alert_email'));
+LINE: 573
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 191
+CODE: public function index() {
+LINE: 3
+CODE: public function index() {
+LINE: 3
+CODE: $data['products'][] = array(
+LINE: 287
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 505
+----------------------------------------------------------------
+MOD: Remove Opencart Branding OC3x
+
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_powered']      = 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s';
+LINE: 16
+
+FILE: admin/view/template/common/header.twig
+CODE: <div id="header-logo" class="navbar-header"><a href="{{ home }}" class="navbar-brand"><img src="view/image/logo.png" alt="{{ heading_title }}" title="{{ heading_title }}" /></a></div>
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: admin/view/template/common/footer.twig
+CODE: <footer id="footer">{{ text_footer }}<br />{{ text_version }}</footer></div>
+LINE: 0
+----------------------------------------------------------------
+2020-11-22 15:09:10 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: OC Customize Template
+
+FILE: admin/model/localisation/language.php
+CODE: return $language_id;
+LINE: 220
+
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 49
+CODE: $data['products'][] = array(
+LINE: 102
+
+FILE: catalog/controller/common/header.php
+CODE: return $this->load->view('common/header', $data);
+LINE: 110
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 42
+
+FILE: catalog/controller/product/category.php
+CODE: foreach ($results as $result) {
+LINE: 153
+LINE: 196
+CODE: $data['products'][] = array(
+LINE: 271
+CODE: 'product_id'  => $result['product_id'],
+LINE: 280
+
+FILE: catalog/controller/product/product.php
+CODE: $results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
+LINE: 393
+CODE: $data['products'][] = array(
+LINE: 472
+CODE: 'rating'      => $rating,
+LINE: 489
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 245
+
+FILE: catalog/controller/product/special.php
+CODE: $results = $this->model_catalog_product->getProductSpecials($filter_data);
+LINE: 96
+CODE: $data['products'][] = array(
+LINE: 173
+CODE: 'rating'      => $result['rating'],
+LINE: 190
+
+FILE: catalog/controller/product/search.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 206
+CODE: $data['products'][] = array(
+LINE: 282
+CODE: 'rating'      => $result['rating'],
+LINE: 299
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 169
+CODE: $data['products'][] = array(
+LINE: 245
+CODE: 'rating'      => $result['rating'],
+LINE: 262
+
+FILE: catalog/controller/account/account.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/address.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 35
+LINE: 67
+LINE: 115
+
+FILE: catalog/controller/account/affiliate.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 43
+
+FILE: catalog/controller/account/download.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/forgotten.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 52
+
+FILE: catalog/controller/account/logout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 27
+
+FILE: catalog/controller/account/newsletter.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/order.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/password.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/recurring.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/reset.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/account/return.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 234
+LINE: 516
+
+FILE: catalog/controller/account/reward.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/account/tracking.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 19
+
+FILE: catalog/controller/account/transaction.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/voucher.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 166
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+
+FILE: catalog/controller/affiliate/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 30
+
+FILE: catalog/controller/checkout/failure.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 75
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+
+FILE: catalog/controller/common/maintenance.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/error/not_found.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/extension/credit_card/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 99
+
+FILE: catalog/controller/extension/credit_card/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/extension/credit_card/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 17
+
+FILE: catalog/controller/extension/payment/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/amazon_login_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/klarna_checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 11
+
+FILE: catalog/controller/extension/payment/wechat_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 24
+
+FILE: catalog/controller/information/sitemap.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/information/contact.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 177
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 38
+LINE: 73
+LINE: 124
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 237
+LINE: 522
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 102
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+CODE: $data['breadcrumbs'] = array();
+LINE: 44
+CODE: $data['breadcrumbs'] = array();
+LINE: 81
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+CODE: $this->load->language('account/voucher');
+LINE: 8
+LINE: 167
+
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('design/layout');
+LINE: 8
+LINE: 21
+LINE: 56
+LINE: 91
+CODE: protected function getForm() {
+LINE: 261
+----------------------------------------------------------------
+MOD: OC Layered Navigation Ajax
+CODE: $category_info = $this->model_catalog_category->getCategory($category_id);
+LINE: 101
+CODE: 'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 173
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
+LINE: 320
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
+LINE: 326
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
+LINE: 332
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+LINE: 338
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+LINE: 344
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
+LINE: 351
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=ASC' . $url)
+LINE: 357
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=ASC' . $url)
+LINE: 364
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
+LINE: 370
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&limit=' . $value)
+LINE: 397
+CODE: $pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
+LINE: 423
+CODE: $data['limit'] = $limit;
+LINE: 446
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 474
+
+FILE: catalog/model/catalog/product.php
+CODE: if (!empty($data['filter_manufacturer_id'])) {
+LINE: 163
+LINE: 532
+----------------------------------------------------------------
+MOD: OC Search Category by Plaza Themes
+CODE: $data['search'] = $this->load->controller('common/search');
+LINE: 75
+----------------------------------------------------------------
+MOD: OC Theme Option
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 326
+
+FILE: admin/controller/catalog/product.php
+CODE: public function index() {
+LINE: 11
+CODE: $this->load->language('catalog/product');
+LINE: 16
+LINE: 30
+LINE: 86
+LINE: 142
+LINE: 200
+CODE: 'sort_order' => $product_image['sort_order']
+LINE: 1112
+
+FILE: admin/model/catalog/product.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+LINE: 74
+LINE: 221
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: <td class="text-right">{{ entry_sort_order }}</td>
+LINE: 998
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 1024
+CODE: function addImage() {
+LINE: 1596
+CODE: $('#images tbody').append(html);
+LINE: 1614
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+NOT FOUND - OPERATIONS ABORTED!
+CODE: return $this->load->view('common/header', $data);
+LINE: 126
+CODE: $this->response->setOutput($this->load->view('design/layout_form', $data));
+LINE: 413
+----------------------------------------------------------------
+2020-12-17 7:21:18 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+NOT FOUND - OPERATIONS ABORTED!
+----------------------------------------------------------------
+MOD: OC Customize Template
+
+FILE: admin/model/localisation/language.php
+CODE: return $language_id;
+LINE: 220
+
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_items'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 49
+CODE: $data['products'][] = array(
+LINE: 102
+
+FILE: catalog/controller/common/header.php
+CODE: return $this->load->view('common/header', $data);
+LINE: 110
+
+FILE: catalog/controller/common/footer.php
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 42
+
+FILE: catalog/controller/product/category.php
+CODE: foreach ($results as $result) {
+LINE: 153
+LINE: 196
+CODE: $data['products'][] = array(
+LINE: 271
+CODE: 'product_id'  => $result['product_id'],
+LINE: 280
+
+FILE: catalog/controller/product/product.php
+CODE: $results = $this->model_catalog_product->getProductRelated($this->request->get['product_id']);
+LINE: 393
+CODE: $data['products'][] = array(
+LINE: 472
+CODE: 'rating'      => $rating,
+LINE: 489
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 245
+
+FILE: catalog/controller/product/special.php
+CODE: $results = $this->model_catalog_product->getProductSpecials($filter_data);
+LINE: 96
+CODE: $data['products'][] = array(
+LINE: 173
+CODE: 'rating'      => $result['rating'],
+LINE: 190
+
+FILE: catalog/controller/product/search.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 206
+CODE: $data['products'][] = array(
+LINE: 282
+CODE: 'rating'      => $result['rating'],
+LINE: 299
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $results = $this->model_catalog_product->getProducts($filter_data);
+LINE: 169
+CODE: $data['products'][] = array(
+LINE: 245
+CODE: 'rating'      => $result['rating'],
+LINE: 262
+
+FILE: catalog/controller/account/account.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/address.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 35
+LINE: 67
+LINE: 115
+
+FILE: catalog/controller/account/affiliate.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 43
+
+FILE: catalog/controller/account/download.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/edit.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/forgotten.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 52
+
+FILE: catalog/controller/account/logout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 27
+
+FILE: catalog/controller/account/newsletter.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/order.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/password.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/account/recurring.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/reset.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/account/return.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 234
+LINE: 516
+
+FILE: catalog/controller/account/reward.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/account/tracking.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 19
+
+FILE: catalog/controller/account/transaction.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/account/voucher.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 166
+
+FILE: catalog/controller/account/wishlist.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+
+FILE: catalog/controller/affiliate/login.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/register.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+
+FILE: catalog/controller/affiliate/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/cart.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 30
+
+FILE: catalog/controller/checkout/failure.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/checkout/success.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 25
+
+FILE: catalog/controller/product/compare.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 75
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+
+FILE: catalog/controller/common/maintenance.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/error/not_found.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/extension/credit_card/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 99
+
+FILE: catalog/controller/extension/credit_card/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+
+FILE: catalog/controller/extension/credit_card/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 17
+
+FILE: catalog/controller/extension/payment/sagepay_direct.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/sagepay_server.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/squareup.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/amazon_login_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/controller/extension/payment/klarna_checkout.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 11
+
+FILE: catalog/controller/extension/payment/wechat_pay.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 24
+
+FILE: catalog/controller/information/sitemap.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+
+FILE: catalog/controller/information/contact.php
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 10
+LINE: 177
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 38
+LINE: 73
+LINE: 124
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 237
+LINE: 522
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 14
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 29
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 8
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+NOT FOUND - OPERATIONS ABORTED!
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+LINE: 102
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 16
+CODE: $data['breadcrumbs'] = array();
+LINE: 44
+CODE: $data['breadcrumbs'] = array();
+LINE: 81
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 28
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 12
+CODE: $this->document->setTitle($this->language->get('heading_title'));
+LINE: 36
+CODE: $this->load->language('account/voucher');
+LINE: 8
+LINE: 167
+
+FILE: admin/controller/design/layout.php
+CODE: $this->load->language('design/layout');
+LINE: 8
+LINE: 21
+LINE: 56
+LINE: 91
+CODE: protected function getForm() {
+LINE: 261
+----------------------------------------------------------------
+MOD: OC Layered Navigation Ajax
+CODE: $category_info = $this->model_catalog_category->getCategory($category_id);
+LINE: 101
+CODE: 'href' => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 173
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.sort_order&order=ASC' . $url)
+LINE: 320
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=ASC' . $url)
+LINE: 326
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=pd.name&order=DESC' . $url)
+LINE: 332
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=ASC' . $url)
+LINE: 338
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.price&order=DESC' . $url)
+LINE: 344
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=DESC' . $url)
+LINE: 351
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=rating&order=ASC' . $url)
+LINE: 357
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=ASC' . $url)
+LINE: 364
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . '&sort=p.model&order=DESC' . $url)
+LINE: 370
+CODE: $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&limit=' . $value)
+LINE: 397
+CODE: $pagination->url = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&page={page}');
+LINE: 423
+CODE: $data['limit'] = $limit;
+LINE: 446
+CODE: $this->response->setOutput($this->load->view('product/category', $data));
+LINE: 474
+
+FILE: catalog/model/catalog/product.php
+CODE: if (!empty($data['filter_manufacturer_id'])) {
+LINE: 163
+LINE: 532
+----------------------------------------------------------------
+MOD: OC Search Category by Plaza Themes
+CODE: $data['search'] = $this->load->controller('common/search');
+LINE: 75
+----------------------------------------------------------------
+MOD: OC Theme Option
+
+FILE: admin/controller/common/column_left.php
+CODE: $sale = array();
+LINE: 326
+
+FILE: admin/controller/catalog/product.php
+CODE: public function index() {
+LINE: 11
+CODE: $this->load->language('catalog/product');
+LINE: 16
+LINE: 30
+LINE: 86
+LINE: 142
+LINE: 200
+CODE: 'sort_order' => $product_image['sort_order']
+LINE: 1112
+
+FILE: admin/model/catalog/product.php
+CODE: $this->db->query("INSERT INTO " . DB_PREFIX . "product_image SET product_id = '" . (int)$product_id . "', image = '" . $this->db->escape($product_image['image']) . "', sort_order = '" . (int)$product_image['sort_order'] . "'");
+LINE: 74
+LINE: 221
+
+FILE: admin/view/template/catalog/product_form.twig
+CODE: <td class="text-right">{{ entry_sort_order }}</td>
+LINE: 998
+CODE: <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+LINE: 1024
+CODE: function addImage() {
+LINE: 1596
+CODE: $('#images tbody').append(html);
+LINE: 1614
+CODE: html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+NOT FOUND - OPERATIONS ABORTED!
+CODE: return $this->load->view('common/header', $data);
+LINE: 126
+CODE: $this->response->setOutput($this->load->view('design/layout_form', $data));
+LINE: 413
+----------------------------------------------------------------
